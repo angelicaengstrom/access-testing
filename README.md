@@ -7,11 +7,11 @@ Below the form, the results of the accessibility tests are presented when a butt
 <img width="1063" alt="resultapp" src="https://github.com/angelicaengstrom/access-testing/assets/78786414/f56a8993-6998-450b-97d1-4de45c01bdf5">
 
 ## start
-To start the server go to the folder project/server and execute
+To start the server go to the folder **project/server** and execute
 ```
 npm start
 ```
-To start the client go to the folder project/client and execute
+To start the client go to the folder **project/client** and execute
 ```
 npm start
 ```
