@@ -6,10 +6,10 @@ export class Form extends Component {
         super(props)
       
         this.state = {
-            url : '',
+            url : localStorage.getItem('url'),
             login : 2,
-            username : '',
-            password : ''
+            username : localStorage.getItem('username'),
+            password : localStorage.getItem('password')
         }
     }
     handleUrlChange = (event) => {
@@ -36,8 +36,13 @@ export class Form extends Component {
 
     handleTest = (event) => {
         localStorage.setItem('url', this.state.url)
-        localStorage.setItem('username', this.state.username)
-        localStorage.setItem('password', this.state.password)
+        if(this.state.login === 1){
+            localStorage.setItem('username', this.state.username)
+            localStorage.setItem('password', this.state.password)
+        }else{
+            localStorage.setItem('username', '')
+            localStorage.setItem('password', '')
+        }
         window.open("/", "_self")
         event.preventDefault()
     }

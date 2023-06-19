@@ -192,3 +192,12 @@ h4{
     font-weight: bold;
     font-style: italic;
 }
+
+.test-error{
+    background-color: #FFDBDF;
+    padding: 2%;
+}
+
+.test-error h3{
+    color: #781A23;
+}

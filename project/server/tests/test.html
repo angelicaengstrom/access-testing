@@ -1,618 +1,898 @@
-<html><head>
-<title>Welcome to CityLights! [Inaccessible Survey Page]</title>    <style>
-      body {
-        color: #000;
-      }
-      #main p, td, form {
-        color: #000000;
-        font: normal 15px/17px "Times New Roman", Times, serif;
-        text-decoration: none;
-      }
-      #main .headline {
-        margin-top: 0px;
-        color: #41545d;
-        font: 24px verdana;
-        font-family: impact;
-        text-decoration: none;
-      }
-      .comment {
-        margin-top: 1em;
-      }
-      .hundred {
-        font-size: 100%;
-      }
-      .bordotabella {
-        background: #ededed;
-        border: 2px solid gray;
-      }
-      .bordotabellacapitolo {
-        background: #a9b8bf;
-      }
-    </style>
-    <link href="../css/meta.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" async="" defer="" src="//www.w3.org/analytics/piwik/piwik.js"></script><script type="text/javascript">
-      function ChangeColor(id, colour){
-        document.getElementById(id).style.backgroundColor=colour;
-      }
-      function switchImage(imgName, imgSrc){
-        if (document.images){
-          if (imgSrc != "none"){
-              document.images[imgName].src = imgSrc;
-          }
-        }
-      }
-    </script>
-    <noscript><B><FONT COLOR=RED>This page uses scripts!!!</FONT></B></noscript>
-    <script src="../js/onload.js" type="text/javascript"></script>
-  </head>
-  <body text="#000000" bgcolor="#D7D7CD" leftmargin="0px" topmargin="0px" marginwidth="0px" marginheight="0px" link="#226C8E" vlink="#226C8E" alink="#226C8E">
-    <div id="meta-header">
-      <p id="skipnav"><a href="#page">Skip to inaccessible demo page</a></p>
-      <p id="logos"><a href="http://www.w3.org/" title="W3C Home"><img alt="W3C logo" src="../img/w3c.png" height="48" width="72"></a><a href="http://www.w3.org/WAI/" title="WAI Home"><img alt="Web Accessibility Initiative (WAI) logo" src="../img/wai.png" height="48"></a></p>
-      <h1><span class="subhead">Inaccessible Survey Page</span><span class="hidden"> -</span> Before and After Demonstration</h1>
-      <p class="subline">Improving a Web site using Web Content Accessibility Guidelines (WCAG) 2.0</p>
-      <div id="mnav" class="inaccessible">
-        <ul>
-          <li class="first"><a href="../Overview.html">Overview</a></li>
-          <li class="first"><a href="home.html">Home</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="tickets.html">Tickets</a></li>
-          <li class="current"><span class="hidden">Current location: </span>Survey
-            <div class="subnav"><ul>
-              <li class="inaccessible"><strong>Inaccessible:</strong><a class="page current"><span class="hidden">Inaccessible </span>Survey Page</a><a href="./reports/survey.html" class="report"><span class="hidden">Inaccessible Survey Page </span> Report</a></li>
-              <li class="accessible"><strong>Accessible:</strong><a href="../after/survey.html" class="page"><span class="hidden">Accessible </span>Survey Page</a><a href="../after/reports/survey.html" class="report"><span class="hidden">Accessible Survey Page </span> Report</a></li>
-            </ul><a href="./annotated/survey.html" class="annotoggle">Show <br>Annotations</a></div>
-          </li>
-          <li><a href="template.html">Template</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="page">
-    <p class="skip" id="startcontent">Demo starts here</p>
-    <table width="100%" border="0px" cellspacing="0px" cellpadding="0px" bgcolor="#D7D7CD"><tbody><tr valign="MIDDLE"><td width="100%" align="CENTER">
-    <table width="800px" border="0px" cellspacing="0px" cellpadding="0px" bgcolor="WHITE">
-      <tbody><tr height="10px">
-        <td width="10px" background="./img/border_left_top.gif"><img src="./img/border_left_top.gif" width="10px" height="10px"></td>
-        <td width="780px" background="./img/border_top.gif"><img src="./img/border_top.gif" height="10px"></td>
-        <td width="10px" background="./img/border_right_top.gif"><img src="./img/border_right_top.gif" width="10px" height="10px"></td>
-      </tr>
-      <tr>
-        <td width="10px" background="./img/border_left.gif"><img src="./img/border_left.gif" width="10px"></td>
-        <td width="780px" align="CENTER">
-    <table width="780px" height="144px" border="0px" cellspacing="0px" cellpadding="0px" bgcolor="WHITE">
-      <tbody><tr height="86px">
-        <td width="443px" background="./img/top_logo_next.gif" valign="MIDDLE"><div><a href="home.html"><img src="./img/top_logo.gif" width="443px" height="86px" alt="Red dot with a white letter 'C' that symbolizes a moon crescent as well as the sun. This logo is followed by a black banner that says 'CITYLIGHTS' which is the name of this online portal. Finally, the slogan of the portal, 'your access to the city', follows in a turquoise green handwriting style and with a slight slant across the top banner."></a></div></td>
-        <td width="24px" valign="MIDDLE"><img src="./img/top_logo_next_end.gif" width="24px" height="86px"></td>
-        <td width="128px" valign="MIDDLE"><img src="./img/top_weather.gif" width="128px" height="86px"></td>
-        <td width="22px" valign="MIDDLE"><img src="./img/top_logo_next_start.gif" width="22px" height="86px"></td>
-        <td width="163px" background="./img/top_logo_next.gif" align="CENTER" valign="MIDDLE">
-          <select onchange="location.href = this.value;">
-            <option selected="">QUICKMENU ----&gt;
-            </option><option value="../offsite.html">Broadcasting
-            </option><option value="../offsite.html">Education
-            </option><option value="../offsite.html">Electricity
-            </option><option value="../offsite.html">Fire service
-            </option><option value="../offsite.html">Gas service
-            </option><option value="../offsite.html">Health care
-            </option><option value="../offsite.html">Police service
-            </option><option value="../offsite.html">Public Libraries
-            </option><option value="../offsite.html">Social services
-            </option><option value="../offsite.html">Social housing
-            </option><option value="../offsite.html">Telecommunications
-            </option><option value="../offsite.html">Town planning
-            </option><option value="../offsite.html">Transportation
-            </option><option value="../offsite.html">Waste management
-            </option><option value="../offsite.html">Water services
-          </option></select>
-        </td>
-      </tr>
-      <tr height="7px">
-        <td width="780px" background="./img/mark.gif" colspan="5"><img src="./img/mark.gif" width="158px" height="7px"></td>
-      </tr>
-      <tr height="25px">
-        <td colspan="5">
-          <table width="780px" border="0px" cellspacing="0px" cellpadding="0px">
-            <tbody><tr height="25px">
-              <td bgcolor="#EDEDED" width="380px"><font color="BLACK" face="Verdana" size="2">&nbsp;&nbsp;<b>Traffic:</b> Construction work on Main Road</font></td>
-              <td bgcolor="#EDEDED" align="RIGHT" id="WEATHER"><font color="BLACK" face="Verdana" size="2"><b>Today:</b>
-                <script language="JavaScript">
-                  var now = new Date();
-                  var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-                  var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
-                  var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-                  function fourdigits(number)	{
-                    return (number < 1000) ? number + 1900 : number;
-                  }
-                  today =  days[now.getDay()] + " " + date + " " + months[now.getMonth()] + " " + (fourdigits(now.getYear())) + ", Sunny, 23&deg;C&nbsp;&nbsp;</FONT>";
-                  document.all.WEATHER.setAttribute("BGCOLOR", "#EDEDED", 0);
-                  document.write(today);
-                </script>Monday 08 May 2023, Sunny, 23°C&nbsp;&nbsp;</font></td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-      <tr height="1px">
-        <td width="780px" background="./img/marker2_w.gif" colspan="5"><img src=".img/marker2_w.gif" width="78px" height="1px"></td>
-      </tr>
-      <tr height="25px">
-        <td colspan="5">&nbsp;</td>
-      </tr>
-    </tbody></table>
-    <table width="780px" border="0px" cellspacing="0px" cellpadding="0px" bgcolor="WHITE">
-      <tbody><tr width="780px">
-        <td width="155px" bgcolor="#E4E4E4" valign="TOP">
-          <table width="155px" border="0px" cellspacing="0px" cellpadding="0px">
-            <tbody><tr height="1px">
-              <td width="155px" background="./img/marker2_w.gif"><img src="./img/marker2_w.gif" width="78px" height="1px"></td>
-              <td width="1px" background="./img/marker2_t.gif" rowspan="9" valign="TOP"><img src="./img/marker2_t.gif" width="1" height="30px"></td>
-            </tr>
-            <tr height="34px">
-              <td width="154px" bgcolor="#EDEDED" id="home" onmouseover="switchImage('nav_home', './img/nav_home2.gif'); ChangeColor('home','#FFF')" onmouseout="switchImage('nav_home', './img/nav_home.gif'); ChangeColor('home','#EDEDED')"><a href="javascript:location.href='home.html';" onfocus="blur();"><img name="nav_home" src="./img/nav_home.gif" width="88" height="27" hspace="15" border="0px"></a></td>
-            </tr>
-            <tr height="1px">
-              <td width="154px" background="./img/marker2_w.gif"><img src="./img/marker2_w.gif" width="78px" height="1px"></td>
-            </tr>
-            <tr height="34px">
-              <td width="154px" bgcolor="#EDEDED" id="news" onmouseover="switchImage('nav_news', './img/nav_news2.gif'); ChangeColor('news','#FFF')" onmouseout="switchImage('nav_news', './img/nav_news.gif'); ChangeColor('news','#EDEDED')"><a href="javascript:location.href='news.html';" onfocus="blur();"><img src="./img/nav_news.gif" name="nav_news" width="90" height="21" hspace="12" border="0px"></a></td>
-            </tr>
-            <tr height="1px">
-              <td width="154px" background="./img/marker2_w.gif"><img src="./img/marker2_w.gif" width="78px" height="1px"></td>
-            </tr>
-            <tr height="34px">
-              <td width="154px" bgcolor="#EDEDED" id="tickets" onmouseover="switchImage('nav_facts', './img/nav_facts2.gif'); ChangeColor('tickets','#FFF')" onmouseout="switchImage('nav_facts', './img/nav_facts.gif'); ChangeColor('tickets','#EDEDED')"><a href="javascript:location.href='tickets.html';" onfocus="blur();"><img name="nav_facts" src="./img/nav_facts.gif" width="105" height="23" hspace="9" border="0px"></a></td>
-            </tr>
-            <tr height="1px">
-              <td width="154px" background="./img/marker2_w.gif"><img src="./img/marker2_w.gif" width="78px" height="1px"></td>
-            </tr>
-            <tr height="34px">
-              <td width="154px" bgcolor="#EDEDED" id="survey" onmouseover="switchImage('nav_survey', './img/nav_survey2.gif'); ChangeColor('survey','#FFF')" onmouseout="switchImage('nav_survey', './img/nav_survey.gif'); ChangeColor('survey','#EDEDED')"><a href="javascript:location.href='survey.html';" onfocus="blur();"><img src="./img/nav_survey.gif" name="nav_survey" width="107" height="32" hspace="8" border="0px"></a></td>
-            </tr>
-            <tr height="1px">
-              <td width="154px" background="./img/marker2_w.gif"><img src="./img/marker2_w.gif" width="78px" height="1px"></td>
-            </tr>
-          </tbody></table>
-        </td>
-        <td width="20px"><img src="./img/blank_5x5.gif" width="20px" height="5px"></td>
-        <td width="625px" height="600px" valign="TOP" id="main"><div>
-          <p class="headline">Citylights Survey</p>
-          <p class="headline"><font size="4">This Week's Survey: More city parks - a pain or a gain?</font></p>
-            <form action="survey.php" method="post">
-            <table class="bordotabella" width="90%" border="0" cellspacing="2" cellpadding="0">
-              <tbody><tr>
-                <td>
-                  <table width="122" border="0" cellspacing="2" cellpadding="0">
-                    <tbody><tr>
-                      <td><img src="./img/gif.gif" alt="" height="25" width="11" border="0"></td>
-                      <td>
-                        <table width="500" border="0" cellspacing="2" cellpadding="0">
-                          <tbody><tr>
-                            <td colspan="4"><img src="./img/gif.gif" alt="" height="10" width="10" border="0"></td>
-                          </tr>
-                          <tr>
-                            <th align="left" colspan="3"><span>Which is your favorite city park?</span></th>
-                            <td height="31%"><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                          </tr>
-                          <tr height="72">
-                            <td valign="top" width="35" height="72">
-                              <table width="34" border="0" cellspacing="2" cellpadding="0">
-                                <tbody><tr height="31%">
-                                  <td width="24"><input class="align" type="radio" name="res" value="1"></td>
-                                  <td height="31%"><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="24"><span><input class="align" type="radio" name="res" value="2"></span></td>
-                                  <td><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="24"><input class="align" type="radio" name="res" value="3"></td>
-                                  <td><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                </tr>
-                              </tbody></table>
-                            </td>
-                            <td valign="top" height="72">
-                              <table width="200" border="0" cellspacing="2" cellpadding="0">
-                                <tbody><tr height="35%">
-                                  <td width="135" height="35%">None</td>
-                                  <td width="191" height="35%"><img src="./img/gif.gif" alt="" height="25" width="10" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="135">Central Park</td>
-                                  <td width="191"><img src="./img/gif.gif" alt="" height="25" width="17" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="135">Grand Park</td>
-                                  <td width="191"><img src="./img/gif.gif" alt="" height="25" width="17" border="0"></td>
-                                </tr>
-                              </tbody></table>
-                            </td>
-                            <td valign="top" width="35" height="72">
-                              <table width="34" border="0" cellspacing="2" cellpadding="0">
-                                <tbody><tr height="31%">
-                                  <td width="24"><input class="align" type="radio" name="res" value="4"></td>
-                                  <td height="31%"><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="24"><input class="align" type="radio" name="res" value="5"></td>
-                                  <td><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="24"><input class="align" type="radio" name="res" value="6"></td>
-                                  <td><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                </tr>
-                              </tbody></table>
-                            </td>
-                            <td valign="top" height="72">
-                              <table width="200" border="0" cellspacing="2" cellpadding="0">
-                                <tbody><tr height="35%">
-                                  <td width="135" height="35%">Jurassic Park</td>
-                                  <td width="191" height="35%"><img src="./img/gif.gif" alt="" height="25" width="10" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="135">South Park</td>
-                                  <td width="191"><img src="./img/gif.gif" alt="" height="25" width="17" border="0"></td>
-                                </tr>
-                                <tr>
-                                  <td width="135">Other</td>
-                                  <td width="191"><img src="./img/gif.gif" alt="" height="25" width="17" border="0"></td>
-                                </tr>
-                              </tbody></table>
-                            </td>
-                          </tr>
-                        </tbody></table>
-                      </td>
-                    </tr>
-                  </tbody></table>
-                </td>
-              </tr>
-            </tbody></table>
-            <p></p>
-            <table class="bordotabella" width="90%" border="0" cellspacing="2" cellpadding="0">
-              <tbody><tr>
-                <td>
-                  <table border="0" cellspacing="2" cellpadding="0">
-                    <tbody><tr>
-                      <td><img src="./img/gif.gif" alt="" height="25" width="11" border="0"></td>
-                      <td>
-                        <table border="0" cellspacing="2" cellpadding="0">
-                          <tbody><tr>
-                            <td colspan="2"><img src="./img/gif.gif" alt="" height="10" width="10" border="0"></td>
-                          </tr>
-                          <tr>
-                            <th align="left" colspan="2">Which city do you find is the greenest?<img src="./img/gif.gif" alt="" height="25" width="5" border="0"></th>
-                          </tr>
-                          <tr>
-                            <td valign="middle" colspan="2"><span>
-                                <select name="cc">
-                                  <option value="0">select a city -----&gt;</option>
-                                  <option>Afghanistan, Kabul</option>
-                                  <option>Albania, Tirana</option>
-                                  <option>Algeria, Algiers</option>
-                                  <option>Andorra, Andorra la Vella</option>
-                                  <option>Angola, Luanda</option>
-                                  <option>Antigua and Barbuda, Saint John's</option>
-                                  <option>Argentina, Buenos Aires</option>
-                                  <option>Armenia, Yerevan</option>
-                                  <option>Australia, Canberra</option>
-                                  <option>Austria, Vienna</option>
-                                  <option>Azerbaijan, Baku (Baki)</option>
-                                  <option>Bahamas, The Nassau</option>
-                                  <option>Bahrain, Manama</option>
-                                  <option>Bangladesh, Dhaka</option>
-                                  <option>Barbados, Bridgetown</option>
-                                  <option>Belarus, Minsk</option>
-                                  <option>Belgium, Brussels</option>
-                                  <option>Belize, Belmopan</option>
-                                  <option>Benin, Porto-Novo</option>
-                                  <option>Bhutan, Thimphu</option>
-                                  <option>Bolivia, Sucre</option>
-                                  <option>Bosnia and Herzegovina, Sarajevo</option>
-                                  <option>Botswana, Gaborone</option>
-                                  <option>Brazil, Brasilia</option>
-                                  <option>Brunei, Bandar Seri Begawan</option>
-                                  <option>Bulgaria, Sofia</option>
-                                  <option>Burkina Faso, Ouagadougou</option>
-                                  <option>Burma, Rangoon</option>
-                                  <option>Burundi, Bujumbura</option>
-                                  <option>Cambodia, Phnom Penh</option>
-                                  <option>Cameroon, Yaounde</option>
-                                  <option>Canada, Ottawa</option>
-                                  <option>Cape Verde, Praia</option>
-                                  <option>Central African Republic, Bangui</option>
-                                  <option>Chad, N'Djamena</option>
-                                  <option>Chile, Santiago</option>
-                                  <option>China, Beijing</option>
-                                  <option>Colombia, Bogota</option>
-                                  <option>Comoros, Moroni</option>
-                                  <option>Congo, Democratic Republic of the, Kinshasa</option>
-                                  <option>Congo, Republic of the, Brazzaville</option>
-                                  <option>Cook Islands, Avarua</option>
-                                  <option>Costa Rica, San Jose</option>
-                                  <option>Cote d'Ivoire, Yamoussoukro</option>
-                                  <option>Croatia, Zagreb</option>
-                                  <option>Cuba, Havana</option>
-                                  <option>Cyprus, Nicosia</option>
-                                  <option>Czech Republic, Prague</option>
-                                  <option>Denmark, Copenhagen</option>
-                                  <option>Djibouti, Djibouti</option>
-                                  <option>Dominica, Roseau</option>
-                                  <option>Dominican Republic, Santo Domingo</option>
-                                  <option>East Timor, Dili</option>
-                                  <option>Ecuador, Quito</option>
-                                  <option>Egypt, Cairo</option>
-                                  <option>El Salvador, San Salvador</option>
-                                  <option>Equatorial Guinea, Malabo</option>
-                                  <option>Eritrea, Asmara</option>
-                                  <option>Estonia, Tallinn</option>
-                                  <option>Ethiopia, Addis Ababa</option>
-                                  <option>Fiji, Suva</option>
-                                  <option>Finland, Helsinki</option>
-                                  <option>France, Paris</option>
-                                  <option>French Guiana, Cayenne</option>
-                                  <option>Gabon, Libreville</option>
-                                  <option>Gambia, The, Banjul</option>
-                                  <option>Georgia, T'bilisi</option>
-                                  <option>Germany, Berlin</option>
-                                  <option>Ghana, Accra</option>
-                                  <option>Greece, Athens</option>
-                                  <option>Grenada, Saint George's</option>
-                                  <option>Guatemala, Guatemala</option>
-                                  <option>Guinea, Conakry</option>
-                                  <option>Guinea-Bissau, Bissau</option>
-                                  <option>Guyana, Georgetown</option>
-                                  <option>Haiti, Port-au-Prince</option>
-                                  <option>Holy See (Vatican City), Vatican City</option>
-                                  <option>Honduras, Tegucigalpa</option>
-                                  <option>Hong Kong, Hong Kong</option>
-                                  <option>Hungary, Budapest</option>
-                                  <option>Iceland, Reykjavik</option>
-                                  <option>India, New Delhi</option>
-                                  <option>Indonesia, Jakarta</option>
-                                  <option>Iran, Tehran</option>
-                                  <option>Iraq, Baghdad</option>
-                                  <option>Ireland, Dublin</option>
-                                  <option>Israel, Jerusalem</option>
-                                  <option>Italy, Rome</option>
-                                  <option>Jamaica, Kingston</option>
-                                  <option>Japan, Tokyo</option>
-                                  <option>Jordan, Amman</option>
-                                  <option>Kazakhstan, Astana</option>
-                                  <option>Kenya, Nairobi</option>
-                                  <option>Kiribati, Tarawa</option>
-                                  <option>Korea, North, P'yongyang</option>
-                                  <option>Korea, South, Seoul</option>
-                                  <option>Kuwait, Kuwait</option>
-                                  <option>Kyrgyzstan, Bishkek</option>
-                                  <option>Laos, Vientiane</option>
-                                  <option>Latvia, Riga</option>
-                                  <option>Lebanon, Beirut</option>
-                                  <option>Lesotho, Maseru</option>
-                                  <option>Liberia, Monrovia</option>
-                                  <option>Libya, Tripoli</option>
-                                  <option>Liechtenstein, Vaduz</option>
-                                  <option>Lithuania, Vilnius</option>
-                                  <option>Luxembourg, Luxembourg</option>
-                                  <option>Macau, Macau</option>
-                                  <option>Macedonia, The Former Yugoslav Republic of, Skopje</option>
-                                  <option>Madagascar, Antananarivo</option>
-                                  <option>Malawi, Lilongwe</option>
-                                  <option>Malaysia, Kuala Lumpur</option>
-                                  <option>Maldives, Male</option>
-                                  <option>Mali, Bamako</option>
-                                  <option>Malta, Valletta</option>
-                                  <option>Marshall Islands, Majuro</option>
-                                  <option>Mauritania, Nouakchott</option>
-                                  <option>Mauritius, Port Louis</option>
-                                  <option>Mexico, Mexico (Distrito Federal)</option>
-                                  <option>Micronesia, Federated States of, Palikir</option>
-                                  <option>Moldova, Chisinau</option>
-                                  <option>Monaco, Monaco</option>
-                                  <option>Mongolia, Ulaanbaatar</option>
-                                  <option>Morocco, Rabat</option>
-                                  <option>Mozambique, Maputo</option>
-                                  <option>Namibia, Windhoek</option>
-                                  <option>Nauru, Yaren District</option>
-                                  <option>Nepal, Kathmandu</option>
-                                  <option>Netherlands, Amsterdam</option>
-                                  <option>New Zealand, Wellington</option>
-                                  <option>Nicaragua, Managua</option>
-                                  <option>Niger, Niamey</option>
-                                  <option>Nigeria, Abuja</option>
-                                  <option>Niue, Alofi</option>
-                                  <option>Norway, Oslo</option>
-                                  <option>Oman, Muscat</option>
-                                  <option>Pakistan, Islamabad</option>
-                                  <option>Palau, Koror</option>
-                                  <option>Papua New Guinea, Port Moresby</option>
-                                  <option>Paraguay, Asuncion</option>
-                                  <option>Peru, Lima</option>
-                                  <option>Philippines, Manila</option>
-                                  <option>Poland, Warsaw</option>
-                                  <option>Romania, Bucharest</option>
-                                  <option>Russia, Moscow</option>
-                                  <option>Rwanda, Kigali</option>
-                                  <option>Saint Kitts and Nevis, Basseterre</option>
-                                  <option>Saint Lucia, Castries</option>
-                                  <option>Saint Vincent and the Grenadines, Kingstown</option>
-                                  <option>Samoa, Apia</option>
-                                  <option>San Marino, San Marino</option>
-                                  <option>Sao Tome and Principe, Sao Tome</option>
-                                  <option>Saudi Arabia, Riyadh</option>
-                                  <option>Senegal, Dakar</option>
-                                  <option>Serbia and Montenegro, Belgrade</option>
-                                  <option>Seychelles, Victoria</option>
-                                  <option>Sierra Leone, Freetown</option>
-                                  <option>Singapore, Singapore</option>
-                                  <option>Slovakia, Bratislava</option>
-                                  <option>Slovenia, Ljubljana</option>
-                                  <option>Solomon Islands, Honiara</option>
-                                  <option>Somalia, Mogadishu</option>
-                                  <option>South Africa, Pretoria, Cape Town</option>
-                                  <option>Spain, Madrid</option>
-                                  <option>Sri Lanka, Colombo</option>
-                                  <option>Sudan, Khartoum</option>
-                                  <option>Suriname, Paramaribo</option>
-                                  <option>Swaziland, Mbabane, Lobamba</option>
-                                  <option>Sweden, Stockholm</option>
-                                  <option>Switzerland, Bern</option>
-                                  <option>Syria, Damascus</option>
-                                  <option>Taiwan, Taipei</option>
-                                  <option>Tajikistan, Dushanbe</option>
-                                  <option>Tanzania, Dar es Salaam</option>
-                                  <option>Thailand, Bangkok</option>
-                                  <option>Togo, Lome</option>
-                                  <option>Tonga, Nuku'alofa</option>
-                                  <option>Trinidad and Tobago, Port-of-Spain</option>
-                                  <option>Tunisia, Tunis</option>
-                                  <option>Turkey, Ankara</option>
-                                  <option>Turkmenistan, Ashgabat</option>
-                                  <option>Tuvalu, Fongafale</option>
-                                  <option>Uganda, Kampala</option>
-                                  <option>Ukraine, Kiev</option>
-                                  <option>United Arab Emirates, Abu Dhabi</option>
-                                  <option>United Kingdom, London</option>
-                                  <option>United States of America, Washington, D.C.</option>
-                                  <option>Uruguay, Montevideo</option>
-                                  <option>Uzbekistan, Tashkent</option>
-                                  <option>Vanuatu, Port-Vila</option>
-                                  <option>Venezuela, Caracas</option>
-                                  <option>Vietnam, Hanoi</option>
-                                  <option>Yemen, Sanaa</option>
-                                  <option>Zambia, Lusaka</option>
-                                  <option>Zimbabwe, Harare</option>
-                                </select></span><img src="./img/gif.gif" alt="" height="25" width="5" border="0">
-                                <p></p>
-                            </td>
-                          </tr>
-                        </tbody></table>
-                      </td>
-                    </tr>
-                  </tbody></table>
-                </td>
-              </tr>
-            </tbody></table>
-            <p></p>
-            <table class="bordotabella" width="90%" border="0" cellspacing="2" cellpadding="0">
-              <tbody><tr>
-                <td>
-                  <table border="0" cellspacing="2" cellpadding="0">
-                    <tbody><tr>
-                      <td><img src="./img/gif.gif" alt="" height="25" width="11" border="0"></td>
-                      <td>
-                        <table border="0" cellspacing="2" cellpadding="0">
-                          <tbody><tr>
-                            <td colspan="2"><img src="./img/gif.gif" alt="" height="10" width="10" border="0"></td>
-                          </tr>
-                          <tr>
-                            <th align="left" colspan="2"><span>Do you want to receive a free newsletter?<img src="./img/gif.gif" alt="" height="25" width="5" border="0"></span></th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <table border="0" cellspacing="2" cellpadding="0">
-                                <tbody><tr>
-                                  <td valign="bottom"><img src="./img/gif.gif" alt="" height="25" width="5" border="0"><nobr>Name: <input type="radio" name="t" value="mr"> Mr. <input type="radio" name="t" value="mrs"> Mrs.</nobr><br><br><input type="text" name="em" id="em" size="20"></td>
-                                  <td><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                  <td valign="bottom"><input type="text" name="n" id="n" size="30"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ev" id="ev" size="20"></td>
-                                </tr>
-                                <tr>
-                                  <td valign="top">eMail Address</td>
-                                  <td><img src="./img/gif.gif" alt="" height="25" width="5" border="0"></td>
-                                  <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retype eMail</td>
-                                </tr>
-                              </tbody></table>
-                            </td>
-                          </tr>
-                        </tbody></table>
-                      </td>
-                    </tr>
-                  </tbody></table>
-                </td>
-              </tr>
-            </tbody></table>
-            <p></p>
-            <table width="90%" border="0" cellspacing="2" cellpadding="0">
-              <tbody><tr>
-                <td><input type="submit" id="submit" value="submit" alt="submit" name="submit"></td>
-              </tr>
-            </tbody></table>
-            <p>&nbsp;</p>
-            <hr>
-          </form>          <div style="clear:both;width:100%;padding:0px;margin:0px;">
-            <div id="data" style="float:left">
-              <p style="padding-bottom:0px; margin-bottom:0px; width:300px; height:40px; overflow: hidden;" class="headline"><font size="3">Last Weeks's Survey Results</font></p><b>What is your favorite and least favorite organ?</b>
-              <table width="560px" border="1" style="float:left; border: 1px dashed silver;">
-                <tbody><tr bgcolor="#DBDBDB">
-                  <td rowspan="4" bgcolor="#ffffff" style="border-right: 1px dashed silver;"><p style="background:#DBDBDB;padding-top:3px;padding-bottom:2px;"><br></p><p style="margin-bottom:0px;padding-top:3px; padding-bottom:5px" align="right"><strong>love it</strong></p><p style="margin-top:5px;background:#DBDBDB;padding-top:3px; padding-bottom:4px" align="right"><strong>hate it</strong></p></td>
-                  <td title="question" width="70"><b>Lung</b></td>
-                  <td title="question" width="70"><b>Pancreas</b></td>
-                  <td title="question" width="70"><b>Spleen</b></td>
-                  <td title="question" width="70"><b>Liver</b></td>
-                  <td title="question" width="70"><b>Skin</b></td>
-                  <td title="question" width="70"><b>Brain</b></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>4</td>
-                  <td>10</td>
-                  <td>4</td>
-                  <td></td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                </tr>
-                <tr bgcolor="#DBDBDB">
-                  <td>5</td>
-                  <td>6</td>
-                  <td></td>
-                  <td>14</td>
-                  <td>1</td>
-                  <td></td>
-                </tr>
-              </tbody></table>
-                          </div>
-          </div>
-          <p>&nbsp;</p></div>
-        </td>
-      </tr>
-    </tbody></table>
-    <table width="780px" height="17px" border="0px" cellspacing="0px" cellpadding="0px" bgcolor="#EDEDED">
-      <tbody><tr height="17px">
-        <td align="RIGHT"><font color="BLACK" face="Verdana" size="1"><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>)</font></td>
-      </tr>
-    </tbody></table>
-        </td><td width="10px" background="./img/border_right.gif"><img src="./img/border_right.gif" width="10px"></td>
-      </tr>
-      <tr height="10px">
-        <td width="10px" height="10px" background="./img/border_bottom_left.gif"><img src="./img/border_bottom_left.gif" width="10px" height="10px"></td>
-        <td width="780px" height="10px" background="./img/border_bottom.gif"><img src="./img/border_bottom.gif" height="10px"></td>
-        <td width="10px" height="10px" background="./img/border_bottom_right.gif"><img src="./img/border_bottom_right.gif" width="10px" height="10px"></td>
-      </tr>
-    </tbody></table>
-    </td></tr></tbody></table>
-    </div>
-    <div id="meta-footer" class="meta">
-      <hr>
-      <p><strong>Status:</strong> 20 February 2012 (see <a href="../changelog.html">changelog</a>) <br>Editors: <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> and the <a href="http://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a>. <br>Developed with support from <a href="http://www.w3.org/WAI/TIES/"><acronym title="Web Accessibility Initiative: Training, Implementation, Education, Support">WAI-TIES</acronym></a> and <a href="http://www.w3.org/WAI/WAI-AGE/"><acronym title="Web Accessibility Initiative: Ageing Education and Harmonisation">WAI-AGE</acronym></a> projects, co-funded by the European Commission <acronym title="Information Society Technologies">IST</acronym> Programme. [see <a href="../acks.html">Acknowledgements</a>]</p>
-      <p>[<a href="http://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="http://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="http://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="http://www.w3.org/WAI/contacts" shape="rect">Contacting WAI</a>] <br><strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
-      <div class="copyright"><p><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a> and <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.</p></div>
-    </div>
-  <!-- Piwik -->
-      <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-      var u="//www.w3.org/analytics/piwik/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', 328]);
-      var d=document, g=d.createElement('script'),
-      s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js';
-      s.parentNode.insertBefore(g,s);
-      })();
-      </script>
-      <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
-      style="border:0;" alt="" /></p></noscript>
-      <!-- End Piwik Code -->
+<!DOCTYPE html><html lang="sv" xml:lang="sv" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8">
+<link rel="preload" href="/Static/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/Static/fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/Static/fonts/MaterialIcons-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
+
+
+<link rel="alternate" href="https://www.miun.se" hreflang="sv-se">
+<link rel="alternate" href="https://www.miun.se/en" hreflang="en-gb">
+<link rel="prefetch" href="https://www.miun.se/">
+<link rel="prerender" href="https://www.miun.se/">
+<meta name="twitter:site:50978084" content="@mittuni ">
+<!-- PIWIK start-->
+<script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/b128dda0/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="//www.youtube.com/iframe_api" async=""></script><script type="text/javascript" async="" defer="" src="https://miun.piwik.pro/ppas.js"></script><script async="" src="https://miun.containers.piwik.pro/d4e49c2d-6dc1-479e-96dc-7d062e78d0c1.js"></script><script nonce="" type="text/javascript">
+(function(window, document, dataLayerName, id) {
+window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+tags.async=!0,tags.src="https://miun.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+})(window, document, 'dataLayer', 'd4e49c2d-6dc1-479e-96dc-7d062e78d0c1');
+</script>
+<!-- MPIWIK end-->
+<!-- RSS start -->
+ <link rel="alternate" type="application/rss+xml" title="Lediga jobb på Mittuniversitetet" href="https://www.miun.se/jobb-rss">
+<link rel="alternate" type="application/rss+xml" title="Studeninfo från Mittuniversitetet" href="https://www.miun.se/studentinfo-rss">
+<link rel="alternate" type="application/rss+xml" title="Medarbetarinfo från Mittuniversitetet" href="https://www.miun.se/medarbetarinfo-rss">
+<link rel="alternate" type="application/rss+xml" title="Mittuniversitetets kalendarium" href="https://www.miun.se/kalendarium-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från Mittuniversitetet" href="https://www.miun.se/nyheter-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från Universitetsbiblioteket" href="https://www.miun.se/ub-rss">
+ <link rel="alternate" type="application/rss+xml" title="Universitetsbibliotekets kalender" href="https://www.miun.se/ubkalender-rss">
+ <link rel="alternate" type="application/rss+xml" title="Pressmeddelanden" href="https://www.miun.se/pressmeddelanden-rss">
+ <link rel="alternate" type="application/rss+xml" title="Studentaktiviteter" href="https://www.miun.se/studentaktiviteter-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från CER" href="https://www.miun.se/cer-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från DEMICOM" href="https://www.miun.se/demicom-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från ETOUR" href="https://www.miun.se/etour-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från FSCN" href="https://www.miun.se/fscn-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från RCR" href="https://www.miun.se/rcr-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från SportsTech" href="https://www.miun.se/sportstech-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från STC" href="https://www.miun.se/stc-rss">
+ <link rel="alternate" type="application/rss+xml" title="Nyheter från NVC" href="https://www.miun.se/nvc-rss">
+ <link rel="alternate" type="application/rss+xml" title="Bygginjenjörsnyheter" href="https://www.miun.se/byggingenjor-rss">
+<!-- RSS end --> 
+<!-- Follow.it start--> 
+<!--RSS- Nyheter --> 
+<meta name="follow_it-verification-code" content="L4xnBktnq61w25mnNsW3">
+<!--RSS- Kalendariet --> 
+<meta name="follow_it-verification-code" content="zJy5ccgPpeeXD7gUnfvY">
+<!--RSS- Medarbetarinfo --> 
+<meta name="follow_it-verification-code" content="jVTxxwPNW9SvUMp2547w">
+<!--RSS- Studentinfo --> 
+<meta name="follow_it-verification-code" content="xYfa7tAyqUK0JYfdwjfw">
+<!--RSS- Pressmeddelanden--> 
+<meta name="follow_it-verification-code" content="ZtCDNtP8mP9zkQdE8HRv">
+<!--RSS- Lediga jobb --> 
+<meta name="follow_it-verification-code" content="CW1HmGxylgvHbS7Ft7AF">
+<!--RSS- Universitetsbiblioteket nyheter--> 
+<meta name="follow_it-verification-code" content="gKWQM4zAsUzPA89TwjN1">
+<!--RSS- Studentaktiviteter --> 
+<meta name="follow_it-verification-code" content="bgaDE8ENHRXxgSZ37YEm">
+<!--RSS- Universitetsbibliotekets kalender --> 
+<meta name="follow_it-verification-code" content="TCZVxDzqrS2Apg94uMVf">
+<!--RSS- CER --> 
+<meta name="follow_it-verification-code" content="MAaV9TD3t94kPg5puJJV">
+<!--RSS- DEMICOM --> 
+<meta name="follow_it-verification-code" content="qPd3NsM1QhqZJVKXfZgg">
+<!--RSS- ETOUR -->
+ <meta name="follow_it-verification-code" content="VQ63Yz4aBspw3UTRcJJD">
+<!--RSS- FSCN --> 
+<meta name="follow_it-verification-code" content="Bw1LeMAczhdgEkQgz9Ke">
+<!--RSS- RCR --> 
+<meta name="follow_it-verification-code" content="Ec2yujhBkfJ67znn8L3c">
+<!--RSS- Sports Tech --> 
+<meta name="follow_it-verification-code" content="e0j72UMUyUfdlNyyK1N9">
+<!--RSS- STC --> 
+<meta name="follow_it-verification-code" content="rFLafTLKVqYU5Xk5NUpe">
+<!--RSS- NVC--> 
+<meta name="follow_it-verification-code" content="HG8vT7acgkgG6czqFXn6">
+<!--RSS- Follow.is end --> 
+    <link rel="manifest" href="/contentassets/5f744a611e6c481195ac689a89ee54df/manifest_sv.json">
+    <link rel="apple-touch-startup-image" href="/globalassets/pwa/launch_640x1136.png">
+    <link rel="apple-touch-startup-image" href="/globalassets/pwa/launch_750x1294.png">
+    <link rel="apple-touch-startup-image" href="/globalassets/pwa/launch_1242x2148.png">
+    <link rel="apple-touch-startup-image" href="/globalassets/pwa/launch_1125x2436.png">
+    <link rel="apple-touch-startup-image" href="/globalassets/pwa/launch_1536x2048.png">
+    <link rel="apple-touch-startup-image" href="/globalassets/pwa/launch_2048x2732.png">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-icon-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-icon-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-touch-icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-icon-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-touch-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-touch-icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/globalassets/pwa/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" href="/globalassets/pwa/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="/globalassets/pwa/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/globalassets/pwa/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" href="/globalassets/pwa/android-icon-192x192.png" sizes="192x192">
+    <link rel="icon" href="/globalassets/pwa/android-chrome-512x512.png" sizes="512x512">
+
+    <meta name="description" content="Mittuniversitetet är ett universitet med det lilla lärosätets fördelar. Både våra utbildningar och vår forskning har bra arbetslivskontakter. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="pageId" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Mittuniversitetet -utbildning, forskning och arbetslivskontakter">
+    <meta property="og:url" content="/">
+    <meta property="og:locale" content="sv">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Miun PWA">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileImage" content="/globalassets/pwa/android-chrome-512x512.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+<title>Mittuniversitetet -utbildning, forskning och arbetslivskontakter | miun.se</title>
+
+
+
+<script nonce="" src="/modules/EPiServer.Vizzit/ClientResources/js/vizzit.integration.js"></script><script src="https://cdn.vizzit.se/integration/"></script>
+<script nonce="">
+$vizzit$ = typeof $vizzit$ != 'undefined' ? $vizzit$ : {};
+</script>
+<script nonce="">
+$vizzit$ = {keys: $vizzit$.keys || {},client: $vizzit$.client || {},config: $vizzit$.config || {},endpoint: $vizzit$.endpoint || {},};
+</script>
+<script nonce="">
+$vizzit$.keys.public = 'FeAdpME7jI9pvsax/JY8XeRS0K9QFFuiFLx+KDFJf0M=';
+</script>
+<script nonce="">
+$vizzit$.config.cookie_auto = false;
+</script>
+
+
+        <link rel="stylesheet" href="/Static/css/app.css?date=638212033620000000">
+    <link rel="stylesheet" href="/Static/css/epi-forms.css?date=638212033620000000">
+
+<script type="text/javascript">var appInsights=window.appInsights||function(config){function t(config){i[config]=function(){var t=arguments;i.queue.push(function(){i[config].apply(i,t)})}}var i={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",r,f;setTimeout(function(){var t=u.createElement(o);t.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(t)});try{i.cookie=u.cookie}catch(y){}for(i.queue=[],r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)t("track"+r.pop());return t("set"+s),t("clear"+s),t(h+a),t(c+a),t(h+v),t(c+v),t("flush"),config.disableExceptionTracking||(r="onerror",t("_"+r),f=e[r],e[r]=function(config,t,u,e,o){var s=f&&f(config,t,u,e,o);return s!==!0&&i["_"+r](config,t,u,e,o),s}),i}({instrumentationKey:"edbccf1b-9d1c-4ca9-a841-00d9a4b7efb6",sdkExtension:"a"});window.appInsights=appInsights;appInsights.queue&&appInsights.queue.length===0&&appInsights.trackPageView();</script><script src="https://az416426.vo.msecnd.net/scripts/a/ai.0.js"></script><style>.rek-prediction .rek-style p{margin:0}.rek-prediction .rek-style ul{list-style:none;padding:0;margin:0}.rek-prediction .rek-style .rek-prediction__content{margin-bottom:1.5rem}.rek-prediction .rek-style .rek-prediction__content img{margin-bottom:0.5rem;max-width:100%}.rek-prediction .rek-style .rek-prediction__title>a{font-size:1.5rem}.rek-prediction .rek-style-cols ul{display:flex;flex-wrap:wrap;justify-content:flex-start}.rek-prediction .rek-style-cols ul li{display:flex;align-items:center;padding:4px}.rek-prediction .rek-style-cols3 li{flex-basis:calc(33.33333% - 8px)}@media (max-width: 990px){.rek-prediction .rek-style-cols3 li{flex-basis:calc(50% - 8px)}}@media (max-width: 546px){.rek-prediction .rek-style-cols3 li{flex-basis:100%}}.rek-prediction .rek-style-cols3.rek-stripes li{background-color:transparent}.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(6n-3),.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(6n-4),.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(6n-5){background-color:#eee}@media (max-width: 990px){.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(n){background-color:transparent}.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(4n+1),.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(4n+2){background-color:#eee}}@media (max-width: 546px){.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(even){background-color:transparent}.rek-prediction .rek-style-cols3.rek-stripes li:nth-child(odd){background-color:#eee}}.rek-prediction .rek-style-cols2 li{flex-basis:calc(50% - 8px)}@media (max-width: 546px){.rek-prediction .rek-style-cols2 li{flex-basis:100%}}.rek-prediction .rek-style-cols2.rek-stripes li:nth-child(n){background-color:transparent}.rek-prediction .rek-style-cols2.rek-stripes li:nth-child(4n+1),.rek-prediction .rek-style-cols2.rek-stripes li:nth-child(4n+2){background-color:#eee}@media (max-width: 546px){.rek-prediction .rek-style-cols2.rek-stripes li:nth-child(even){background-color:transparent}.rek-prediction .rek-style-cols2.rek-stripes li:nth-child(odd){background-color:#eee}}.rek-prediction .rek-style-cols1 li{flex-basis:100%}.rek-prediction .rek-style-cols1.rek-stripes li:nth-child(even){background-color:transparent}.rek-prediction .rek-style-cols1.rek-stripes li:nth-child(odd){background-color:#eee}.rekai-newsarticle-img-wrapper{padding-bottom:43.75%;position:relative;overflow:hidden;height:0;background-color:initial;opacity:1}.rekai-newsarticle-img-wrapper img{position:absolute;display:block;width:100%;object-fit:cover;top:50%;left:50%;min-height:100%;min-width:100%;transform:translate(-50%, -50%);height:100%}.rekai-newsarticle-article-container{padding-left:6px;padding-right:6px;box-sizing:border-box}.rekai-newsarticle-article-container-c1{width:100%}.rekai-newsarticle-article-container-c2{width:50%}.rekai-newsarticle-article-container-c3{width:33%}@media (max-width: 767px){div[class^="rekai-newsarticle-article-container-"],div[class*=" rekai-newsarticle-article-container-"]{width:100%}}.rekai-news-wrapper{margin-left:-6px;margin-right:-6px}.env-d--flex{display:-ms-flexbox;display:flex}.rek-d--flex{display:-ms-flexbox;display:flex}.rek-flex-wrap--wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.rek-p-bottom--x-small{padding-bottom:0.5em !important}.rek-m-bottom--x-small{margin-bottom:0.5em !important}.rek-style-pills{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.rekai-pill{box-sizing:border-box;margin-right:0.5rem;border:1px solid #333}.rekai-pill:last-child{margin-right:0}.rekai-pill-link{display:block;padding:0.5rem 1rem}.rekai-pills.env-list--horizontal{flex-wrap:wrap}.rekai-pill-radius{border-radius:200px}
+</style><style>.rekai-autocomplete {
+    width: 100%;
+}
+.rekai-autocomplete .rekai-suggestion {
+    cursor: pointer;
+}
+.rekai-autocomplete .rekai-input, .rekai-autocomplete .rekai-hint {
+    width: 100%;
+}
+.rekai-autocomplete .rekai-hint {
+    color: #999;
+}
+.rekai-autocomplete .rekai-dropdown-menu {
+    width: 100%;
+}
+
+
+.rekai-autocomplete.rekai-styled .rekai-hint {
+    color: #999;
+}
+.rekai-autocomplete.rekai-styled .rekai-dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12)
+}
+.rekai-autocomplete.rekai-styled .rekai-suggestion {
+    padding: 5px 12px;
+}
+.rekai-autocomplete.rekai-styled .rekai-suggestion p {
+    margin:0;
+}
+.rekai-autocomplete.rekai-styled .rekai-dropdown-menu .rekai-suggestion.rekai-cursor {
+    background-color: rgb(230, 241, 252);
+}</style><script src="https://s2.getsitecontrol.com/widgets/es6/runtime.8331070.js"></script><script id="ppas_container_configuration" data-appid="d4e49c2d-6dc1-479e-96dc-7d062e78d0c1" data-host="miun.piwik.pro"></script><script type="text/javascript" src="https://tag.vizzit.se/traffic/pixel.js?0.08350976435146085&amp;i=46654164704d45376a493970767361782f4a593858655253304b395146467569464c782b4b44464a66304d3d&amp;l=https%3A%2F%2Fwww.miun.se%2F&amp;r=&amp;c=5gemh6iwnydnech1bntw9c49xapxss6k3%3D%3D%3A1686228928_unset&amp;sx=1440&amp;sy=960&amp;bl=sv-SE&amp;je=false&amp;anonip=false&amp;u=null" integrity="sha512-z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP+DGNKHfuwvY7kxvUdBeoGlODJ6+SfaPg==" crossorigin="anonymous"></script></head>
+
+<body class="blue">
+    <noscript>
+        <a href="#main" aria-label="Hoppa till innehållet" class="skip-link"></a>
+<header class="main-header d-flex flex-row align-items-center">
+    <div class="wrapper d-flex flex-row justify-content-between align-items-center">
+        <nav class="m-left d-flex flex-row align-items-center" id="main-navigation" aria-label="primary">
+            <a href="?showMenu=1" aria-label="Meny" class="m-link d-flex flex-row align-items-center m-hamburger">
+                <i class="material-icons">menu</i>
+                <span>Meny</span>
+            </a>
+        </nav>
+        <div class="m-center">
+            <a href="/" aria-label="logo" id="logo" title="MIUN logotyp">
+                <img  src='https://miun.imagevault.media/publishedmedia/sxltvhd7yh4pfpsbz94y/Miun_logotyp_CMYK.svg' height='162' width='300' alt='Mittuniversitets logotyp '>
+            </a>
+        </div>
+        <nav class="m-right d-flex flex-row align-items-center justify-content-end" id="secondary-navigation"
+            aria-label="secondary">
+            <a href="https://www.miun.se/search" aria-label="S&#246;k" class="m-link d-flex flex-row align-items-center woot">
+                <i class="material-icons">search</i>
+                <span>S&#246;k</span>
+            </a>
+            <a href="/en/" aria-label="English" class="m-link d-flex flex-row align-items-center ">
+                <i class="material-icons">language</i>
+                <span>English</span>
+            </a>
+        </nav>
+    </div>
+
+</header>
+    </noscript>
+    <div id="app"><a href="#main" aria-label="Hoppa till innehållet" class="skip-link">Hoppa till innehållet</a> <div id="header-vue" class="miun-header enable-vue no-breadcrumbs" is-bookmark="" save-bookmark-text="" remove-bookmark-text="" read-speaker="" menu=""><header class="miun-menu__wrapper"><div class="container miun-favourites"><div class="row"><div class="col"><nav id="fav-navigation"><ul class="list-unstyled mb-0 miun-favourites__links right"><li class="favourite-button"><button aria-label="Öppna favoriter" class="no-style"><i class="material-icons">favorite</i> <span class="favourite-button__text">Favoriter</span></button></li> <li class="cartcomponent"><!----></li> <li class="lattlast-button"><a href="/lattlast/" aria-label="Lättläst"><i class="material-icons"></i> <span>Lättläst</span></a></li> <li class="lang-button"><button class="no-style"><i class="material-icons">language</i> <span>Language</span></button></li></ul> <div class="miun-favourites__quicklinks-wrap"><ul class="list-unstyled mb-0 miun-favourites__quicklinks left"><li class="favourite-button"><a href="/" class="ql-active">miun.se</a></li><li class="favourite-button"><a href="/student/" class="">Student</a></li><li class="favourite-button"><a href="/biblioteket/" class="">Biblioteket</a></li><li class="favourite-button"><a href="/medarbetare/" class="">Medarbetare</a></li></ul> <div class="miun-fade"></div></div></nav></div></div></div> <div class="miun-menu__mainmenu-wrapper" menutext="[object Object]"><div class="container"><div class="row"><div class="col"><div class="miun-menu"><div class="miun-menu__menu"><button aria-label="Meny" class="m-link m-menu no-style"><i class="material-icons menu">menu</i> <span>Meny</span></button> <a href="/search" aria-label="Sök" class="d-xs-flex d-md-none"><i class="material-icons search">search</i></a></div> <div class="miun-menu__logo"><a href="/" title="Mittuniversitets logotyp " aria-label="Mittuniversitets logotyp "><img src="https://miun.imagevault.media/publishedmedia/fdo57pdre7mwqim0umt3/Miun_logotyp_CMYK.svg" alt="Mittuniversitets logotyp " width="150" height="150"></a></div> <nav class="miun-menu__nav"><a href="/search" aria-label="Sök" class="d-none d-md-flex m-link m-search "><i class="material-icons search">search</i> <span>Sök</span></a> <!----> <!----> <div class="miun-menu__user"><div class="login-popup__wrapper" style="display: none;"><div><div tabindex="0" aria-hidden="true"></div> <div tabindex="1" aria-hidden="true"></div> <div data-lock=""><div class="login-popup__container"><div class="login-popup__header"><span> Logga in som:  </span> <button><i class="material-icons">close</i></button></div> <div class="login-popup__body"><ul class="list-unstyled"><div class="login-popup__signin"><a href="/login/Miun?returnUrl=https%3A%2F%2Fwww.miun.se%2F" class="login-popup__button login-popup__signin-button"><span>Student</span></a> <a href="/login/Miun?returnUrl=https%3A%2F%2Fwww.miun.se%2F" class="login-popup__button login-popup__signin-button"><span>Medarbetare</span></a></div> <!----></ul></div></div></div> <div tabindex="0" aria-hidden="true"></div></div></div> <button aria-label="Logga in" class="m-link m-login no-style"><i class="material-icons">
+                  person_outline
+                </i> <span>
+                  Logga in
+                </span></button></div></nav></div></div></div></div></div> <div class="divider"></div> <!----> <!----></header> <!----> <!----> <!----> <!----> <!----> <!----> <!----></div></div>
+        <main id="main" style="padding-top: 134px;">
+
+        <h1 class="screen-reader">Mittuniversitetet -utbildning, forskning och arbetslivskontakter</h1>
+<div style="background-color:#f9f7f6;" class="container-fluid no-padding">
+<div class="row"><div class="block pagechildrenblock  col-md-12">    <div class="page-children-block">
+        <div class="pcb-container ">
+                <a href="/utbildning/">
+                    <div class="pcb-child">
+                        <p>Utbildning</p>
+                    </div>
+                </a>
+                <a href="/Forskning/">
+                    <div class="pcb-child">
+                        <p>Forskning</p>
+                    </div>
+                </a>
+                <a href="/mot-mittuniversitetet/">
+                    <div class="pcb-child">
+                        <p>Möt Mittuniversitetet</p>
+                    </div>
+                </a>
+                <a href="/jobba-hos-oss/">
+                    <div class="pcb-child">
+                        <p>Jobba hos oss</p>
+                    </div>
+                </a>
+                <a href="/kontakt/">
+                    <div class="pcb-child">
+                        <p>Kontakt</p>
+                    </div>
+                </a>
+        </div>
+    </div>
+</div><div class="block heroblock  col-md-12">
+<div class="hero-block mb-4 autoplay hero-right">
+    <div class="hero-container"> 
+        <div class="hero">
+            <div id="hero-slider" class="col-12 hero-slider" data-time="10000" style="transition-duration: 0ms; transform: translateX(-100%);"><div class="hero-slide grey">
+                        <div class="large-screens lazyload" data-bg="https://miun.imagevault.media/publishedmedia/prn4iyjre3bnsqlgevos/12880638-batterier.webp">
+                            <div class="d-block info grey lazyload" data-bg="/static/images/greyHeroRight.svg">
+                                <h2 class="mb-3">Batteriforskning</h2>
+                                <p>Vi vill att du ska kunna resa mer miljövänligt i framtiden. Därför forskar vi på anodmaterial i batterier för bilindustrin och andra viktiga samhällsfrågor.</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/vi-vill-att/batteriforskningen/">Bättre elbilar med billigare och miljövänligare batterier</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="small-screens">
+                            <div>
+                                <img class="col-12" src="https://miun.imagevault.media/publishedmedia/prn4iyjre3bnsqlgevos/12880638-batterier.webp" alt="">
+                            </div>
+                            <div class="text-part grey lazyloaded" data-bg="/static/images/greyHeroRight.svg" style="background-image: url(&quot;/static/images/greyHeroRight.svg&quot;);">
+                                <h2 class="mb-3">Batteriforskning</h2>
+                                <p>Vi vill att du ska kunna resa mer miljövänligt i framtiden. Därför forskar vi på anodmaterial i batterier för bilindustrin och andra viktiga samhällsfrågor.</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/vi-vill-att/batteriforskningen/">Bättre elbilar med billigare och miljövänligare batterier</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide blue is-active">
+                        <div class="large-screens lazyload" data-bg="https://miun.imagevault.media/publishedmedia/y4osvsf95kpsmfero71d/pexels-pixabay-289586.webp">
+                            <div class="d-block info blue lazyload" data-bg="/static/images/blueHeroRight.svg">
+                                <h2 class="mb-3">Hälsa</h2>
+                                <p>Hälsa, såväl fysisk och psykisk som social, är avgörande för vår livskvalitet. Ta del av Mittuniversitetets spännande forskning om hälsa ur olika aspekter.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/tema/halsa/">Här kan du läsa mer om temat hälsa</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="small-screens">
+                            <div>
+                                <img class="col-12" src="https://miun.imagevault.media/publishedmedia/y4osvsf95kpsmfero71d/pexels-pixabay-289586.webp" alt="">
+                            </div>
+                            <div class="text-part blue lazyloaded" data-bg="/static/images/blueHeroRight.svg" style="background-image: url(&quot;/static/images/blueHeroRight.svg&quot;);">
+                                <h2 class="mb-3">Hälsa</h2>
+                                <p>Hälsa, såväl fysisk och psykisk som social, är avgörande för vår livskvalitet. Ta del av Mittuniversitetets spännande forskning om hälsa ur olika aspekter.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/tema/halsa/">Här kan du läsa mer om temat hälsa</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide grey">
+                        <div class="large-screens lazyload" data-bg="https://miun.imagevault.media/publishedmedia/prn4iyjre3bnsqlgevos/12880638-batterier.webp">
+                            <div class="d-block info grey lazyload" data-bg="/static/images/greyHeroRight.svg">
+                                <h2 class="mb-3">Batteriforskning</h2>
+                                <p>Vi vill att du ska kunna resa mer miljövänligt i framtiden. Därför forskar vi på anodmaterial i batterier för bilindustrin och andra viktiga samhällsfrågor.</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/vi-vill-att/batteriforskningen/">Bättre elbilar med billigare och miljövänligare batterier</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="small-screens">
+                            <div>
+                                <img class="col-12" src="https://miun.imagevault.media/publishedmedia/prn4iyjre3bnsqlgevos/12880638-batterier.webp" alt="">
+                            </div>
+                            <div class="text-part grey lazyloaded" data-bg="/static/images/greyHeroRight.svg" style="background-image: url(&quot;/static/images/greyHeroRight.svg&quot;);">
+                                <h2 class="mb-3">Batteriforskning</h2>
+                                <p>Vi vill att du ska kunna resa mer miljövänligt i framtiden. Därför forskar vi på anodmaterial i batterier för bilindustrin och andra viktiga samhällsfrågor.</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/vi-vill-att/batteriforskningen/">Bättre elbilar med billigare och miljövänligare batterier</a></p>
+                            </div>
+                        </div>
+                    </div>
+            <div class="hero-slide blue">
+                        <div class="large-screens lazyload" data-bg="https://miun.imagevault.media/publishedmedia/y4osvsf95kpsmfero71d/pexels-pixabay-289586.webp">
+                            <div class="d-block info blue lazyload" data-bg="/static/images/blueHeroRight.svg">
+                                <h2 class="mb-3">Hälsa</h2>
+                                <p>Hälsa, såväl fysisk och psykisk som social, är avgörande för vår livskvalitet. Ta del av Mittuniversitetets spännande forskning om hälsa ur olika aspekter.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/tema/halsa/">Här kan du läsa mer om temat hälsa</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="small-screens">
+                            <div>
+                                <img class="col-12" src="https://miun.imagevault.media/publishedmedia/y4osvsf95kpsmfero71d/pexels-pixabay-289586.webp" alt="">
+                            </div>
+                            <div class="text-part blue lazyload" data-bg="/static/images/blueHeroRight.svg">
+                                <h2 class="mb-3">Hälsa</h2>
+                                <p>Hälsa, såväl fysisk och psykisk som social, är avgörande för vår livskvalitet. Ta del av Mittuniversitetets spännande forskning om hälsa ur olika aspekter.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a class="button-default bg-white" href="/mot-mittuniversitetet/tema/halsa/">Här kan du läsa mer om temat hälsa</a></p>
+                            </div>
+                        </div>
+                    </div></div>
+        <div class="hero-navigation"><span class="hero-play" style="display: none;"><i class="fa fa-play"></i></span><span class="hero-pause" style="display: block;"><i class="fa fa-pause"></i></span><button type="button" class="hero-bullet is-active" aria-label="Gå till bild 1"></button><button type="button" class="hero-bullet" aria-label="Gå till bild 2"></button></div></div>
+    </div>
+</div>
+
+
+
+</div></div></div>
+
+
+        <div class="container-fluid overflow-area-container">
+            <div class="container">
+<div class="container">
+    <div class="row primary-content-area-top">
+        <div class="col-12">
+<div class="row"><div class="block linkedcontentbannerblock  col-md-4">		<div class="link-block linked " data-link="/kontakt/press/expertlistor/kriget-i-ukraina/">
+			<div class="link-block-item ">
+					<figure class="image-wrapper" style="margin-bottom: 20px;">
+							<img class=" lazyloaded" src="https://miun.imagevault.media/publishedmedia/ra1gckuvjwfu7uo27qix/51151639-ukraine-flag-waving-on-the-wind-against-the-blue-sky.webp" data-src="https://miun.imagevault.media/publishedmedia/ra1gckuvjwfu7uo27qix/51151639-ukraine-flag-waving-on-the-wind-against-the-blue-sky.webp" height="603" width="1080" alt="Ukrainas flagga mot himmel">
+					</figure>
+					<h3 class="heading-level-3">
+							<a href="/kontakt/press/expertlistor/kriget-i-ukraina/">Våra forskare om kriget i Ukraina</a>
+					<p>Vi har flera forskare som kan bidra med expertkunskap som på olika sätt rör kriget i Ukraina. Läs nyheter och hitta experter inom området.</p>
+				
+			</h3></div>
+		</div>
+
+</div><div class="block linkedcontentbannerblock  col-md-4">		<div class="link-block linked " data-link="/utbildning/">
+			<div class="link-block-item ">
+					<figure class="image-wrapper" style="margin-bottom: 20px;">
+							<img class=" lazyloaded" src="https://miun.imagevault.media/publishedmedia/cxaoie21aytzg5j5knhr/MI7A8419.webp" data-src="https://miun.imagevault.media/publishedmedia/cxaoie21aytzg5j5knhr/MI7A8419.webp" height="603" width="1080" alt="Studenter, utomhus, Östersund">
+					</figure>
+					<h3 class="heading-level-3">
+							<a href="/utbildning/">Utbildning</a>
+					<p>Här hittar du all information om våra kurser och program som startar sommaren och hösten -23 samt våren -24. Vilken är din drömutbildning?&nbsp;</p>
+				
+			</h3></div>
+		</div>
+
+</div><div class="block linkedcontentbannerblock  col-md-4">		<div class="link-block linked " data-link="/utbildning/distansutbildning/">
+			<div class="link-block-item ">
+					<figure class="image-wrapper" style="margin-bottom: 20px;">
+							<img class=" lazyloaded" src="https://miun.imagevault.media/publishedmedia/1rwo5lfr77pfg2sxnvol/3N9A3566FOTOCRED_TINA_STAFREN.webp" data-src="https://miun.imagevault.media/publishedmedia/1rwo5lfr77pfg2sxnvol/3N9A3566FOTOCRED_TINA_STAFREN.webp" height="603" width="1080" alt="Utbildning_Infomatik_programvaruteknik">
+					</figure>
+					<h3 class="heading-level-3">
+							<a href="/utbildning/distansutbildning/">Distansutbildning</a>
+					<p>Vi har ett av Sveriges största utbud av distansutbildningar. Kurser och program, en del med träffar på campus, andra helt över internet.&nbsp;</p>
+				
+			</h3></div>
+		</div>
+
+</div></div>        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    <div id="maincontent">
+        
+
+
+
+
+    </div>
+
+    <div class="container">
+        <div class="row secondary-content-area">
+            <div class="col-12">
+<div class="row"><div class="block shufflenewsandeventpagemodel  col-md-12"> <div class="shuffleblock vld-parent w-100">
+    <div class="d-flex flex-row  title-wrapper mb-md justify-content-between">
+        <div class="d-flex">
+            <span class="fa fa-regular fa-calendar mr-3" style="font-size: 1.5rem; color: #0D58A3; display:none;"></span>
+            <h3 class="heading-level-2 mb-0">
+                Aktuellt
+            </h3>
+        </div>
+        
+        <div class="float-right shuffle-links">
+               <a href="/kontakt/press/nyhetsarkiv/">Fler  nyheter</a>
+        </div>
+    </div>
+    <div class="row pab-col">
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                            <a href="/medarbetare/gemensamt/medarbetarinfo/2023-6/databas-med-gamla-dagstidningar-oppnas-for-allmanheten/" title="Databas med gamla dagstidningar öppnas för allmänheten" class="article-shuffle-img">
+                                <div class="img-with-caption">
+                                    <div class="img-caption lazyload" title="gammal dagstidnings första sida" data-bg="https://miun.imagevault.media/publishedmedia/36w0a742ih73kingylpc/Ska-rmavbild_2023-06-08_kl._10.40.48.webp"></div>
+                                    <span class="caption">Nyhet</span>
+                                </div>
+                            </a>
+                        <a href="/medarbetare/gemensamt/medarbetarinfo/2023-6/databas-med-gamla-dagstidningar-oppnas-for-allmanheten/" title="Databas med gamla dagstidningar öppnas för allmänheten" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">Nyhet</span>
+                            <h3 class="heading-level-3">
+                                Databas med gamla dagstidningar öppnas för allmänheten
+                            </h3>
+                                <p class="mb-0  shuffle-date-mobile">torsdag 8 juni 2023</p>
+                        </a>
+                            <p class="shuffle-intro">
+                                En guldgruva har öppnats för dig som är intresserad av att hitta information i gamla dagstidningar. Det är databasen Svenska dagstidningar som nu finns tillgänglig på Mittuniversitetet i Sundsvall och Östersund. Bara att sätta igång och gräva!
+                            </p>
+                            <p class="mb-0  shuffle-date">torsdag 8 juni 2023</p>
+                    </article>
+            </div>
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                            <a href="/kontakt/press/nyhetsarkiv/2023-5/120-forskolebarn-deltog-i-forskollararprogrammets-inspirationsworkshops/" title="120 förskolebarn deltog i Förskollärarprogrammets inspirationsworkshops" class="article-shuffle-img">
+                                <div class="img-with-caption">
+                                    <div class="img-caption lazyload" title="En ljusblå filt ligger på golvet. Bredvid den ligger ett gossedjur som föreställer en fisk" data-bg="https://miun.imagevault.media/publishedmedia/exefj70anlmclyyykgsa/IMG_1755.webp"></div>
+                                    <span class="caption">Nyhet</span>
+                                </div>
+                            </a>
+                        <a href="/kontakt/press/nyhetsarkiv/2023-5/120-forskolebarn-deltog-i-forskollararprogrammets-inspirationsworkshops/" title="120 förskolebarn deltog i Förskollärarprogrammets inspirationsworkshops" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">Nyhet</span>
+                            <h3 class="heading-level-3">
+                                120 förskolebarn deltog i Förskollärarprogrammets inspirationsworkshops
+                            </h3>
+                                <p class="mb-0  shuffle-date-mobile">torsdag 8 juni 2023</p>
+                        </a>
+                            <p class="shuffle-intro">
+                                Nyligen höll tredjeårsstudenterna på Förskollärarprogrammet i flera inspirationsworkshops för förskolebarn. Totalt ca 120 barn och 20 pedagoger deltog i workshoparna som hade temat ”Lek som värld”
+                            </p>
+                            <p class="mb-0  shuffle-date">torsdag 8 juni 2023</p>
+                    </article>
+            </div>
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                            <a href="/medarbetare/gemensamt/medarbetarinfo/2023-6/avsiktsforklaring/" title="Ny avsiktsförklaring om framtida bilatera samarbeten" class="article-shuffle-img">
+                                <div class="img-with-caption">
+                                    <div class="img-caption lazyload" title="Anders Fällström och Professor Atiqul Islam" data-bg="https://miun.imagevault.media/publishedmedia/rqv2pd6mi10owx9ys1cr/avtal1.webp"></div>
+                                    <span class="caption">Nyhet</span>
+                                </div>
+                            </a>
+                        <a href="/medarbetare/gemensamt/medarbetarinfo/2023-6/avsiktsforklaring/" title="Ny avsiktsförklaring om framtida bilatera samarbeten" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">Nyhet</span>
+                            <h3 class="heading-level-3">
+                                Ny avsiktsförklaring om framtida bilatera samarbeten
+                            </h3>
+                                <p class="mb-0  shuffle-date-mobile">fredag 2 juni 2023</p>
+                        </a>
+                            <p class="shuffle-intro">
+                                I veckan fick Mittuniversitetet besök av NSU (North South university) från Bangladesh.  Syftet med mötet var att teckna ett sk. MoU, en  avsiktsförklaring om att våra två lärosäten vill undersöka vilka möjligheter som finns för ett framtida samarbete.
+                            </p>
+                            <p class="mb-0  shuffle-date">fredag 2 juni 2023</p>
+                    </article>
+            </div>
+    </div>
+    <div class="row action-links-shuffle mt-xs mb-md">
+        <div class="col-12 align-self-end">
+            <div class="col">
+                <div class="float-right">
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div><div class="block shufflenewsandeventpagemodel  col-md-12"> <div class="shuffleblock vld-parent w-100">
+    <div class="d-flex flex-row  title-wrapper mb-md justify-content-between">
+        <div class="d-flex">
+            <span class="fa fa-regular fa-calendar mr-3" style="font-size: 1.5rem; color: #0D58A3; display:none;"></span>
+            <h3 class="heading-level-2 mb-0">
+                Evenemang
+            </h3>
+        </div>
+        
+        <div class="float-right shuffle-links">
+                <a href="/mot-mittuniversitetet/kalendarium/" class="ml-auto mr-md">Fler evenemang</a>
+        </div>
+    </div>
+    <div class="row pab-col">
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/vad-hander-med-universitetet-i-krig/" title="Vad händer med universitetet i krig? – forskare från Ukraina berättar" class="article-shuffle-img">
+                            <div class="img-with-caption">
+                                <div class="img-caption lazyload" title="" data-bg="https://miun.imagevault.media/publishedmedia/2xs4fkelidsr7vd3kpsd/Matton_16.9_HW11735.webp"></div>
+                                <span class="caption">tor 8 jun</span>
+                            </div>
+                        </a>
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/vad-hander-med-universitetet-i-krig/" title="Vad händer med universitetet i krig? – forskare från Ukraina berättar" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">tor 8 jun</span>
+                            <h2 class="heading-level-3">
+                                Vad händer med universitetet i krig? – forskare från Ukraina berättar
+                            </h2>
+                                <p class="mb-0 shuffle-date-mobile">
+                                    
+                                </p>
+                        </a>
+                                <p class="shuffle-intro">
+                                    Välkommen till ett seminarium med universitetslärare och forskare från universitetet i Kharkiv, Ukraina, som är på besök i Östersund. De kommer att prata om sina erfarenheter av att upprätthålla utbildnings- och forskningsverksamhet efter att Rysslands invasion inleddes den 24 februari 2022.
+                                </p>
+                                <p class="mb-0 shuffle-date">
+                                    
+                                </p>
+                    </article>
+            </div>
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/disputation-i-sociologi-med-sara-ekholm/" title="Disputation i sociologi med Sara Ekholm" class="article-shuffle-img">
+                            <div class="img-with-caption">
+                                <div class="img-caption lazyload" title="En kvinna med mörkt långt hår." data-bg="https://miun.imagevault.media/publishedmedia/vlrnxtaontwlnb7bpzqs/sara_ekholm.webp"></div>
+                                <span class="caption">fre 9 jun</span>
+                            </div>
+                        </a>
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/disputation-i-sociologi-med-sara-ekholm/" title="Disputation i sociologi med Sara Ekholm" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">fre 9 jun</span>
+                            <h2 class="heading-level-3">
+                                Disputation i sociologi med Sara Ekholm
+                            </h2>
+                                <p class="mb-0 shuffle-date-mobile">
+                                    
+                                </p>
+                        </a>
+                                <p class="shuffle-intro">
+                                    Välkommen att närvara den 9 juni när Sara Ekholm försvarar sin doktorsavhandling "Föräldraskap och klimatoro – betydelsen av omsorg".
+                                </p>
+                                <p class="mb-0 shuffle-date">
+                                    
+                                </p>
+                    </article>
+            </div>
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/naringslivsfrukost-i-sundsvall/" title="Näringslivsfrukost i Sundsvall" class="article-shuffle-img">
+                            <div class="img-with-caption">
+                                <div class="img-caption lazyload" title="Näringslivsfrukost i Sundsvall. " data-bg="https://miun.imagevault.media/publishedmedia/eqh0g7ntr2gltm1niiy3/N-ringslivsfrukost_.webp"></div>
+                                <span class="caption">tis 13 jun</span>
+                            </div>
+                        </a>
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/naringslivsfrukost-i-sundsvall/" title="Näringslivsfrukost i Sundsvall" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">tis 13 jun</span>
+                            <h2 class="heading-level-3">
+                                Näringslivsfrukost i Sundsvall
+                            </h2>
+                                <p class="mb-0 shuffle-date-mobile">
+                                    
+                                </p>
+                        </a>
+                                <p class="shuffle-intro">
+                                    ”Större och starkare företag – så får du hjälp att utveckla och växla upp” - det är temat på Näringslivsfrukosten i Sundsvall 13 juni – den sista innan sommaren och du är varmt välkommen!
+                                </p>
+                                <p class="mb-0 shuffle-date">
+                                    
+                                </p>
+                    </article>
+            </div>
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/var-med-och-satt-inriktningen-pa-framtidens-strategiska-innovationsprogram/" title="Var med och sätt inriktningen på framtidens Strategiska Innovationsprogram!" class="article-shuffle-img">
+                            <div class="img-with-caption">
+                                <div class="img-caption lazyload" title="Ett flertal olika loggor visas" data-bg="https://miun.imagevault.media/publishedmedia/hruf6ot9ev7f15th9b5b/Sustaingov.webp"></div>
+                                <span class="caption">mån 19 jun</span>
+                            </div>
+                        </a>
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-6/var-med-och-satt-inriktningen-pa-framtidens-strategiska-innovationsprogram/" title="Var med och sätt inriktningen på framtidens Strategiska Innovationsprogram!" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">mån 19 jun</span>
+                            <h2 class="heading-level-3">
+                                Var med och sätt inriktningen på framtidens Strategiska Innovationsprogram!
+                            </h2>
+                                <p class="mb-0 shuffle-date-mobile">
+                                    
+                                </p>
+                        </a>
+                                <p class="shuffle-intro">
+                                    Den 19 juni genomför SustainGov ett fysiskt möte på Handelshögskolan i Stockholm där vi välkomnar en bred konstellation av aktörer från offentlig sektor, civilsamhälle och näringsliv att delta.
+                                </p>
+                                <p class="mb-0 shuffle-date">
+                                    
+                                </p>
+                    </article>
+            </div>
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                        <a href="/Forskning/forskningscentra/sensible-things-that-communicate/events-seminarier/calendar/2023-6/ai-verkstad---effektivisera-ditt-arbete/" title="AI-verkstad - Effektivisera ditt arbete" class="article-shuffle-img">
+                            <div class="img-with-caption">
+                                <div class="img-caption lazyload" title="Hand som håller i en mobiltelefon med texten ChatGPT en dator i bakgrunden. " data-bg="https://miun.imagevault.media/publishedmedia/60e2utbdm1365ge8l50n/59139557-screen-with-chatgpt-chat-with-ai-or-artificial.webp"></div>
+                                <span class="caption">tis 20 jun</span>
+                            </div>
+                        </a>
+                        <a href="/Forskning/forskningscentra/sensible-things-that-communicate/events-seminarier/calendar/2023-6/ai-verkstad---effektivisera-ditt-arbete/" title="AI-verkstad - Effektivisera ditt arbete" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">tis 20 jun</span>
+                            <h2 class="heading-level-3">
+                                AI-verkstad - Effektivisera ditt arbete
+                            </h2>
+                                <p class="mb-0 shuffle-date-mobile">
+                                    
+                                </p>
+                        </a>
+                                <p class="shuffle-intro">
+                                    Är du nyfiken på alla nya AI-verktyg och hur de kan bidra till ditt arbete? Den 20 juni kör vi en AI-verkstad där vi praktiskt går igenom de vanligaste AI-verktygen och du får testa dem själv med handledning av våra experter.
+                                </p>
+                                <p class="mb-0 shuffle-date">
+                                    
+                                </p>
+                    </article>
+            </div>
+            <div class="col-12 col-md-4 pab-variant">
+                    <article class="article-shuffle article-shuffle_pab">
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-10/installationsforelasningar-5-oktober/" title="Installationsföreläsningar med nya hedersdoktorer och professorer" class="article-shuffle-img">
+                            <div class="img-with-caption">
+                                <div class="img-caption lazyload" title="Akademisk högtidsskrift 2017" data-bg="https://miun.imagevault.media/publishedmedia/wrgcdor94kbdcdz6ujfx/Akademisk_H-gtidsskrift_2017_framsida.webp"></div>
+                                <span class="caption">tor 5 okt</span>
+                            </div>
+                        </a>
+                        <a href="/mot-mittuniversitetet/kalendarium/2023-10/installationsforelasningar-5-oktober/" title="Installationsföreläsningar med nya hedersdoktorer och professorer" class="article-shuffle-info">
+                            <span class="caption article-shuffle-caption-mobile">tor 5 okt</span>
+                            <h2 class="heading-level-3">
+                                Installationsföreläsningar med nya hedersdoktorer och professorer
+                            </h2>
+                                <p class="mb-0 shuffle-date-mobile">
+                                    
+                                </p>
+                        </a>
+                                <p class="shuffle-intro">
+                                    Den 5 oktober håller våra nya hedersdoktorer och professorer sina installationsföreläsningar i samband med vår akademiska högtid i Östersund.
+                                </p>
+                                <p class="mb-0 shuffle-date">
+                                    
+                                </p>
+                    </article>
+            </div>
+    </div>
+    <div class="row action-links-shuffle mt-xs mb-md">
+        <div class="col-12 align-self-end">
+            <div class="col">
+                <div class="float-right">
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div></div>            </div>
+        </div>
+    </div>
+</main>
+
+        <div class="last-update">
+        
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row contact-us justify-content-center">
+            <div class="col-md-4 contact-card">
+                <div class="contact-icon">
+                    <span class="material-icons">phone</span>
+                </div>
+                <div class="contact-url">
+                    <a href="tel:+4610-1428000">+46 (0)10-142 80 00 </a>
+                </div>
+                <div class="contact-text">
+                    <p>Måndag–fredag, kl. 8–16</p>
+                </div>
+            </div>
+            <div class="col-md-4 contact-card">
+                <div class="contact-icon">
+                    <span class="material-icons">mail_outline</span>
+                </div>
+                <div class="contact-url">
+                    <a href="mailto:kontakt@miun.se">kontakt@miun.se</a>
+                </div>
+                <div class="contact-text">
+                    <p>Vi svarar på e-post måndag till fredag</p>
+                </div>
+            </div>
+            <div class="col-md-4 contact-card">
+                <div class="contact-icon">
+                    <span class="material-icons">info_outline</span>
+                </div>
+                <div class="contact-url">
+                    <a href="/kontakt/sakerhet/">Kris och säkerhet</a>
+                </div>
+                <div class="contact-text">
+                    <p>Om nödsituation skulle uppstå</p>
+                </div>
+            </div>
+        </div>
+        <ul class="social-links list-unstyled">
+                <li>
+                        <a href="https://www.miun.se/hittahit/">Hitta till oss</a>
+                </li>
+                <li>
+                        <a href="https://www.miun.se/omwebbplatsen">Om webbplatsen</a>
+                </li>
+                <li>
+                        <a href="https://www.miun.se/cookieinstallningar">Cookieinställningar</a>
+                </li>
+                <li>
+                        <a href="https://www.miun.se/tycktill">♥ Tyck till </a>
+                </li>
+        </ul>
+    </div>
+</footer>
+    <button id="back-to-top" aria-label="Gå tillbaka till toppen" title="Gå tillbaka till toppen"></button>
+    <script nonce="" id="favouritesConfig" type="application/json">
+    {"addUrl":"/api/favourites/add","removeUrl":"/api/favourites/remove","updateUrl":"/api/favourites/update","favourites":[],"isAuthenticated":false}
+</script>
+
+<script nonce="" defer="" src="/Static/js/vendors~main.js?date=638212033620000000"></script>
+<script nonce="" defer="" src="/Static/js/main.js?date=638212033620000000"></script>
+<script nonce="" defer="" src="/Static/js/forms/extensions.js?date=638212033620000000"></script>
+<script nonce="" defer="" src="/Static/js/forms/utilities.js?date=638212033620000000"></script>
+
+
+
+<script nonce="">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        var tinys = document.querySelectorAll("textarea.tinymce");
+        if (tinys.length)
+        {
+            $script('https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.4.1/tinymce.min.js', function() {
+                tinymce.init({selector:'textarea.tinymce',
+                    plugins: "preview, autoresize, autolink, wordcount, link, paste, contextmenu, autosave",
+                    promotion: false,
+                    contextmenu: "paste | link",
+                    toolbar: "restoredraft | undo redo | preview | blocks | link | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | table | paste | fontsizeselect | wordcount",
+                    default_link_target: "_blank",
+                    autosave_retention: '30m',
+                    autosave_interval: '15s',
+                    min_height: 500
+                }); 
+            });
+        }
+    });
+</script>
+<script nonce="">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        var tf = document.querySelector(".tinyfix");
+        if (tf)
+        {
+            tf.on('shown.bs.modal', function() {
+            document.off('focusin.modal');
+            });
+        }
+    });
+</script>
+<!-- Readspeaker -->
+
+
+<script nonce="">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        let flatpickers = document.querySelectorAll("input.flatpickr");
+        flatpickers.forEach((pi) => $flatpicker(pi));
+        readspeakerUrl = 'https://cdn-eu.readspeaker.com/script/5305/webReader/webReader.js?pids=wr';
+        window.rsConf = {
+            googletranslate:
+                { en: 'en_uk', nl: 'nl_nl', sv: 'sv_se', is: 'is_is', pt: 'pt_pt', ru: 'ru_ru', tr: 'tr_tr', el: 'el_gr', fa: 'fa_ir', de: 'de_de', 'zh-CN': 'zh_cn' },
+            params: readspeakerUrl
+        };
+        loadReadspeaker = function(lang) 
+        {
+            $script(readspeakerUrl, function(data) {
+                ReadSpeaker.init();
+                readpage('https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=5305&lang=' + lang + '&readid=maincontent', 'readspeaker_player');
+            });
+            return false;
+        };
+    });
+</script>
+
+
+
+<!--Rek.ai start --> 
+<script nonce="" src="https://static.rekai.se/15724e83.js"></script>
+<script nonce="" src="https://static.rekai.se/addon/rekai_autocomplete.min.js"></script>
+<!--Rek.ai end --> 
+<script nonce="" src="https://dl.episerver.net/13.2.5/epi-util/find.js"></script>
+<script nonce="">
+if(FindApi){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}
+</script>
+
+
+
+
+<div class="d-flex justify-content-center elfsight-app-570376ef-7e6b-425a-9c06-05dfd4a52e2e" id="eapps-social-icons-1"><div class="eapps-social-icons eapps-widget
+    eapps-social-icons-location-inline
+    eapps-social-icons-position-center
+    eapps-social-icons-size-32
+    eapps-social-icons-style-default
+    eapps-social-icons-border-radius-circle
+    eapps-social-icons-icon-color-white
+    eapps-social-icons-bg-color-native
+    eapps-social-icons-icon-color-on-hover-native
+    eapps-social-icons-bg-color-on-hover-white
+    eapps-social-icons-animation-none
+" style="width: auto;"><a class="eapps-social-icons-item-facebook eapps-social-icons-item" href="https://facebook.com/mittuniversitetet" target="_blank" rel="nofollow" title="Facebook">
+    <span eapps-link="svg"><svg version="1.1" id="Layer_FB" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="eapps-social-icons-item-icon"> <g> <path fill="%233E68C0" d="M5.677,12.998V8.123h3.575V6.224C9.252,2.949,11.712,0,14.736,0h3.94v4.874h-3.94 c-0.432,0-0.934,0.524-0.934,1.308v1.942h4.874v4.874h-4.874V24H9.252V12.998H5.677z"></path> </g> </svg></span>
+</a><a class="eapps-social-icons-item-instagram eapps-social-icons-item" href="https://instagram.com/mittuniversitetet" target="_blank" rel="nofollow" title="Instagram">
+    <span eapps-link="svg"><svg version="1.1" id="Layer_Insta" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="eapps-social-icons-item-icon"> <g> <circle fill="%23222222" cx="18.05" cy="5.992" r="1.355"></circle> <path fill="%23222222" d="M12.021,5.806c-3.427,0-6.215,2.788-6.215,6.215s2.788,6.215,6.215,6.215s6.215-2.788,6.215-6.215 S15.448,5.806,12.021,5.806z M12.021,15.412c-1.87,0-3.391-1.521-3.391-3.391s1.521-3.391,3.391-3.391 c1.87,0,3.391,1.521,3.391,3.391S13.891,15.412,12.021,15.412z"></path> <path fill="%23222222" d="M23.369,4.574c-0.357-0.919-0.846-1.669-1.539-2.362c-0.693-0.693-1.443-1.182-2.362-1.539 c-0.905-0.352-1.836-0.533-3.018-0.587c-1.153-0.053-1.536-0.065-4.43-0.065c-2.895,0-3.277,0.012-4.43,0.065 C6.409,0.14,5.478,0.321,4.574,0.673C3.655,1.03,2.904,1.519,2.212,2.212C1.519,2.904,1.03,3.655,0.673,4.573 C0.321,5.478,0.14,6.409,0.086,7.591c-0.053,1.153-0.065,1.536-0.065,4.43s0.012,3.277,0.065,4.43 c0.054,1.182,0.235,2.113,0.587,3.018c0.357,0.919,0.846,1.669,1.539,2.362c0.693,0.693,1.443,1.182,2.362,1.539 c0.905,0.352,1.836,0.533,3.018,0.587c1.153,0.053,1.536,0.065,4.43,0.065c2.895,0,3.277-0.012,4.43-0.065 c1.182-0.054,2.113-0.235,3.018-0.587c0.919-0.357,1.669-0.846,2.362-1.539c0.693-0.693,1.182-1.443,1.539-2.362 c0.352-0.905,0.533-1.836,0.587-3.018c0.053-1.153,0.065-1.536,0.065-4.43s-0.012-3.277-0.065-4.43 C23.902,6.409,23.721,5.478,23.369,4.574z M21.135,16.322c-0.05,1.105-0.239,1.715-0.398,2.123 c-0.216,0.556-0.486,0.971-0.903,1.389c-0.417,0.417-0.833,0.687-1.389,0.904c-0.408,0.159-1.018,0.347-2.123,0.397 c-1.123,0.051-1.46,0.062-4.301,0.062c-2.841,0-3.178-0.011-4.301-0.062c-1.105-0.05-1.715-0.239-2.123-0.398 c-0.556-0.216-0.971-0.486-1.389-0.903c-0.417-0.417-0.687-0.833-0.904-1.389c-0.159-0.408-0.347-1.018-0.397-2.123 c-0.051-1.123-0.062-1.46-0.062-4.301s0.011-3.178,0.062-4.301c0.05-1.105,0.239-1.715,0.398-2.123 c0.216-0.556,0.486-0.971,0.903-1.389c0.417-0.417,0.833-0.687,1.389-0.904C6.005,3.146,6.615,2.957,7.72,2.907 c1.123-0.051,1.46-0.062,4.301-0.062c2.841,0,3.178,0.011,4.302,0.062c1.105,0.05,1.715,0.239,2.123,0.398 c0.556,0.216,0.971,0.486,1.389,0.903c0.417,0.417,0.687,0.833,0.904,1.389c0.159,0.408,0.347,1.018,0.397,2.123 c0.051,1.123,0.062,1.46,0.062,4.301S21.186,15.199,21.135,16.322z"></path> </g> </svg></span>
+</a><a class="eapps-social-icons-item-tiktok eapps-social-icons-item" href="https://www.tiktok.com/@mittuniversitetet" target="_blank" rel="nofollow" title="TikTok">
+    <span eapps-link="svg"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24pt" height="24pt" viewBox="0 0 24 24" version="1.1" class="eapps-social-icons-item-icon"> <g id="surface1"> <path class="tiktok-red" style="fill-rule:nonzero;fill:%23f00044;" d="M 8.535156 12.441406 C 6.632812 12.441406 5.09375 13.976562 5.125 15.863281 C 5.140625 17.070312 5.808594 18.121094 6.789062 18.707031 C 6.453125 18.195312 6.257812 17.59375 6.25 16.941406 C 6.21875 15.054688 7.757812 13.519531 9.660156 13.519531 C 10.035156 13.519531 10.398438 13.578125 10.734375 13.6875 L 10.734375 9.914062 C 10.382812 9.863281 10.023438 9.835938 9.660156 9.835938 C 9.640625 9.835938 9.628906 9.835938 9.609375 9.835938 L 9.609375 12.609375 C 9.273438 12.5 8.910156 12.441406 8.535156 12.441406 Z M 8.535156 12.441406 "></path> <path class="tiktok-red" style="fill-rule:nonzero;fill:%23f00044;" d="M 16.761719 1.125 L 15.757812 1.125 C 16.039062 2.535156 16.832031 3.765625 17.9375 4.597656 C 17.210938 3.636719 16.773438 2.4375 16.761719 1.125 Z M 16.761719 1.125 "></path> <path class="tiktok-red" style="fill-rule:nonzero;fill:%23f00044;" d="M 22.5 6.867188 C 22.128906 6.867188 21.773438 6.828125 21.421875 6.765625 L 21.421875 9.46875 C 20.148438 9.46875 18.910156 9.21875 17.746094 8.722656 C 16.996094 8.40625 16.296875 7.996094 15.65625 7.503906 L 15.675781 15.84375 C 15.664062 17.71875 14.925781 19.476562 13.585938 20.804688 C 12.492188 21.882812 11.109375 22.570312 9.609375 22.789062 C 9.257812 22.84375 8.898438 22.871094 8.535156 22.871094 C 6.933594 22.871094 5.40625 22.351562 4.164062 21.390625 C 4.304688 21.558594 4.453125 21.722656 4.617188 21.882812 C 5.96875 23.210938 7.757812 23.949219 9.664062 23.949219 C 10.027344 23.949219 10.386719 23.921875 10.738281 23.867188 C 12.238281 23.648438 13.621094 22.960938 14.714844 21.882812 C 16.054688 20.554688 16.796875 18.796875 16.804688 16.921875 L 16.734375 8.582031 C 17.371094 9.074219 18.070312 9.488281 18.824219 9.800781 C 19.992188 10.292969 21.230469 10.546875 22.5 10.546875 "></path> <path class="tiktok-blue" style="fill-rule:nonzero;fill:%2308fff9;fill-opacity:1;" d="M 4.601562 11.910156 C 5.9375 10.585938 7.714844 9.847656 9.609375 9.835938 L 9.609375 8.835938 C 9.257812 8.785156 8.898438 8.757812 8.535156 8.757812 C 6.625 8.757812 4.828125 9.492188 3.476562 10.832031 C 2.152344 12.148438 1.390625 13.949219 1.398438 15.820312 C 1.398438 17.703125 2.140625 19.472656 3.488281 20.808594 C 3.703125 21.019531 3.921875 21.214844 4.15625 21.394531 C 3.097656 20.132812 2.523438 18.558594 2.515625 16.898438 C 2.523438 15.027344 3.277344 13.226562 4.601562 11.910156 Z M 4.601562 11.910156 "></path> <path class="tiktok-blue" style="fill-rule:nonzero;fill:%2308fff9;fill-opacity:1;" d="M 21.421875 6.765625 L 21.421875 5.761719 L 21.414062 5.761719 C 20.109375 5.761719 18.910156 5.328125 17.945312 4.597656 C 18.78125 5.703125 20.011719 6.492188 21.421875 6.765625 Z M 21.421875 6.765625 "></path> <path class="tiktok-blue" style="fill-rule:nonzero;fill:%2308fff9;fill-opacity:1;" d="M 9.46875 20.257812 C 9.914062 20.28125 10.339844 20.222656 10.734375 20.09375 C 12.09375 19.648438 13.074219 18.382812 13.074219 16.894531 L 13.078125 11.316406 L 13.078125 1.125 L 15.757812 1.125 C 15.6875 0.773438 15.652344 0.417969 15.648438 0.046875 L 11.953125 0.046875 L 11.953125 10.234375 L 11.949219 15.8125 C 11.949219 17.300781 10.96875 18.566406 9.609375 19.011719 C 9.214844 19.144531 8.789062 19.203125 8.34375 19.175781 C 7.777344 19.144531 7.246094 18.976562 6.789062 18.703125 C 7.363281 19.59375 8.347656 20.199219 9.46875 20.257812 Z M 9.46875 20.257812 "></path> <path class="tiktok-black" style="fill-rule:nonzero;fill:%23000000;fill-opacity:1;" d="M 9.609375 22.789062 C 11.109375 22.570312 12.492188 21.882812 13.585938 20.804688 C 14.925781 19.476562 15.664062 17.71875 15.675781 15.84375 L 15.65625 7.503906 C 16.292969 7.996094 16.992188 8.410156 17.746094 8.722656 C 18.914062 9.214844 20.152344 9.46875 21.421875 9.46875 L 21.421875 6.765625 C 20.011719 6.492188 18.78125 5.703125 17.945312 4.597656 C 16.835938 3.765625 16.039062 2.535156 15.765625 1.125 L 13.078125 1.125 L 13.078125 11.3125 L 13.074219 16.890625 C 13.074219 18.378906 12.09375 19.644531 10.734375 20.089844 C 10.339844 20.222656 9.914062 20.28125 9.46875 20.253906 C 8.34375 20.195312 7.363281 19.589844 6.789062 18.703125 C 5.808594 18.121094 5.140625 17.066406 5.125 15.859375 C 5.09375 13.972656 6.632812 12.4375 8.535156 12.4375 C 8.910156 12.4375 9.273438 12.496094 9.609375 12.605469 L 9.609375 9.828125 C 7.714844 9.84375 5.9375 10.578125 4.601562 11.90625 C 3.277344 13.222656 2.515625 15.023438 2.523438 16.890625 C 2.523438 18.546875 3.097656 20.125 4.164062 21.382812 C 5.410156 22.34375 6.933594 22.867188 8.535156 22.867188 C 8.898438 22.871094 9.257812 22.84375 9.609375 22.789062 Z M 9.609375 22.789062 "></path> </g> </svg></span>
+</a><a class="eapps-social-icons-item-twitter eapps-social-icons-item" href="https://twitter.com/mittuni" target="_blank" rel="nofollow" title="Twitter">
+    <span eapps-link="svg"><svg version="1.1" id="Layer_Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="eapps-social-icons-item-icon"> <g> <path id="twitter-4-icon_1_" fill="%2323ABFF" d="M21.535,7.063c0.311,6.923-4.852,14.642-13.99,14.642 c-2.78,0-5.368-0.815-7.545-2.213c2.611,0.308,5.217-0.415,7.287-2.038c-2.154-0.039-3.972-1.462-4.599-3.418 c0.771,0.148,1.53,0.105,2.223-0.084c-2.367-0.475-4.002-2.608-3.948-4.888c0.664,0.369,1.423,0.59,2.229,0.615 C1.001,8.215,0.38,5.32,1.67,3.108c2.428,2.978,6.055,4.938,10.145,5.143c-0.717-3.079,1.618-6.044,4.796-6.044 c1.415,0,2.694,0.598,3.592,1.554c1.121-0.221,2.174-0.631,3.126-1.195c-0.368,1.149-1.149,2.114-2.164,2.724 c0.995-0.119,1.944-0.384,2.826-0.776C23.331,5.503,22.497,6.37,21.535,7.063z"></path> </g> </svg></span>
+</a><a class="eapps-social-icons-item-youtube eapps-social-icons-item" href="https://youtube.com/mittuniversitetet" target="_blank" rel="nofollow" title="YouTube">
+    <span eapps-link="svg"><svg version="1.1" id="Layer_YT" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="eapps-social-icons-item-icon"> <g> <path fill="%23EE3130" d="M23.777,6.602c-0.205-1.75-0.625-2.261-0.921-2.494c-0.475-0.371-1.337-0.499-2.487-0.578 c-1.85-0.126-4.979-0.2-8.37-0.2c-3.391,0-6.519,0.074-8.368,0.2C2.482,3.609,1.619,3.738,1.144,4.108 C0.847,4.341,0.429,4.852,0.222,6.602c-0.296,2.522-0.296,8.273,0,10.796c0.207,1.749,0.625,2.26,0.922,2.492 c0.475,0.373,1.338,0.501,2.487,0.58c1.849,0.125,4.978,0.199,8.368,0.199c3.392,0,6.52-0.075,8.37-0.199 c1.15-0.079,2.011-0.207,2.487-0.58c0.296-0.232,0.716-0.743,0.921-2.492C24.074,14.875,24.074,9.125,23.777,6.602z M9.104,15.774 V8.225L16.344,12L9.104,15.774z"></path> </g> </svg></span>
+</a><a class="eapps-social-icons-item-linkedin eapps-social-icons-item" href="https://www.linkedin.com/school/mid-sweden-university//" target="_blank" rel="nofollow" title="LinkedIn">
+    <span eapps-link="svg"><svg version="1.1" id="Layer_linkedIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="eapps-social-icons-item-icon"> <g> <path id="linkedin-square-rounded-icon_2_" fill="%2315ACE5" d="M6.52,22h-4.13V8.667h4.13V22z M4.436,6.92 c-1.349,0-2.442-1.101-2.442-2.46C1.994,3.102,3.087,2,4.436,2s2.442,1.102,2.442,2.46C6.877,5.819,5.784,6.92,4.436,6.92z M21.994,22h-4.109c0,0,0-5.079,0-6.999c0-1.919-0.73-2.991-2.249-2.991c-1.652,0-2.515,1.116-2.515,2.991c0,2.054,0,6.999,0,6.999 h-3.96V8.667h3.96v1.796c0,0,1.191-2.202,4.02-2.202c2.828,0,4.853,1.727,4.853,5.298C21.994,17.129,21.994,22,21.994,22z"></path> </g> </svg></span>
+</a><a class="eapps-social-icons-item-rss eapps-social-icons-item" href="https://www.miun.se/rss" target="_blank" rel="nofollow" title="RSS">
+    <span eapps-link="svg"><svg version="1.1" id="Layer_RSS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="eapps-social-icons-item-icon"> <g> <path id="rss-circle-icon_2_" fill="%23FFAD1D" d="M4.695,22c-1.497,0-2.71-1.212-2.71-2.706c0-1.495,1.213-2.707,2.71-2.707 s2.71,1.212,2.71,2.707C7.406,20.788,6.193,22,4.695,22z M11.171,22c-0.052-5.035-4.144-9.122-9.186-9.173V8.818 C9.252,8.869,15.133,14.743,15.185,22H11.171L11.171,22z M17.971,22c-0.013-4.266-1.681-8.276-4.702-11.293 C10.253,7.694,6.248,6.029,1.985,6.01V2c11.038,0.039,19.975,8.974,20,20H17.971L17.971,22z"></path> </g> </svg></span>
+</a></div><style>
+    #eapps-social-icons-1 .eapps-social-icons-item {
+        opacity: 1;
+    }
+
+    #eapps-social-icons-1 .eapps-social-icons-item:hover {
+        opacity: 1;
+    }
+</style><style>#eapps-social-icons-1 a[target="_blank"]::after { content: ""; }</style></div> <br><br><script src="//l.getsitecontrol.com/m426j9wy.js" type="text/javascript"></script><!-- Piwik PRO -->
+<script type="text/javascript">
+    var _ppas = _ppas || [];
+    _ppas.push(['setUserIsAnonymous', 1]);
+    _ppas.push(["trackPageView"]);
+    _ppas.push(["enableLinkTracking"]);
+    (function() {
+        var u = "https://miun.piwik.pro/";
+        _ppas.push(["setTrackerUrl", u + "ppms.php"]);
+        _ppas.push(["setSiteId", "d4e49c2d-6dc1-479e-96dc-7d062e78d0c1"]);
+        var d = document,
+            g = d.createElement("script"),
+            s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "ppas.js";
+        s.parentNode.insertBefore(g, s);
+    })();
+</script><script type="text/javascript">
+    (function(l,p){var e,t="PPHeatmapClickProxyEvent";l.addEventListener(t,function(e){p._paq.push(["trackEvent","Heatmap events","Click",function(e,t){function s(e){var t=e;return i.forEach(function(e){t=t.replace(new RegExp(e,"g")," ").trim()}),t}function a(e){for(var t,a=[],r=0,n=e[r];n&&n!==l&&n!==p&&"html"!==(t=n.tagName.toLowerCase());n=n.parentNode,r++){if(n.id){t="#".concat(n.id),a.push(t);break}if(1<Array.prototype.slice.call(n.parentNode.children).filter(function(e){return e.tagName.toLowerCase()===t}).length){var o=Array.prototype.slice.call(n.parentNode.children).indexOf(n)+1;0<o&&(t+=":nth-child(".concat(o,")"))}if("string"==typeof n.className&&n.className){var c=n.className.trim();i.length&&(c=s(c)),c=c.replace(/\s+/g,"."),t+=".".concat(c)}a.push(t)}return a.reverse().join(">")}var i=t.CSSClassesSeparators,r=[],n="";if(e.composedPath)n=a(e.composedPath());else{for(var o=e.target;null!==o.parentNode;)r.push(o),o=o.parentNode;r.push(p.document),n=a(r)}return n}(e,{CSSClassesSeparators:[/\|\|/]})])}),(e=l.createEvent("HTMLEvents")).initEvent(t,!0,!0),p.PPHeatmapClickEvent=e})(document,window);
+</script>
+<script type="text/javascript">
+    (function(e,r,i){function s(t){return"function"==typeof t.getCurrentTime?t.getCurrentTime():t.playerInfo.currentTime}function c(t,e){var a="function"==typeof(a=t).getVideoData?a.getVideoData():a.playerInfo.videoData;(r._paq||[]).push(["trackEvent","Video - YouTube",e,a.title,s(t).toFixed()])}function a(t){i.trackThresholds&&t.data===YT.PlayerState.PLAYING&&setTimeout(l,1e3,t.target),t.data===YT.PlayerState.PLAYING&&(-1<["i","p"].indexOf(YT.lastAction)&&c(t.target,"i"===YT.lastAction?"Play":"Resume"),YT.lastAction=""),t.data===YT.PlayerState.PAUSED&&(c(t.target,"Pause"),YT.lastAction="p"),t.data===YT.PlayerState.ENDED&&(c(t.target,"Watched"),YT.lastAction="i")}function l(t){if(("function"==typeof(n=t).getPlayerState?n.getPlayerState():n.playerInfo.playerState)===YT.PlayerState.PLAYING&&0<i.thresholdsToTrack.length){for(var e,a=i.thresholdsToTrack,r=t.lastP||-1,n=a[a.length-1]||-1,o=0;o<a.length;o+=1)if(a[o]>r){r=a[o];break}-1<r&&(e=n<=(n=(s(n=t)/("function"==typeof(n=n).getDuration?n.getDuration():n.playerInfo.duration)*100).toFixed()),r<=n&&(t.lastP=e?200:n,c(t,"Progress - "+r+"%")),e||setTimeout(l,1e3,t))}}function n(){e.querySelectorAll("iframe").forEach(function(t){var e;/youtube.*\/embed/.test((e=t).src)&&!e.getAttribute("data-listener-attached")&&(e=t,void 0!==r.YT)&&(-1===(t=e).src.indexOf("enablejsapi=")&&(t.src+=(-1===t.src.indexOf("?")?"?":"&")+"enablejsapi=1"),new YT.Player(e,{events:{onStateChange:a}}),e.setAttribute("data-listener-attached",!0),YT.lastAction="i")})}r.onYouTubeIframeAPIReady=function(){var t;n(),r.MutationObserver&&(t=e.getElementsByTagName("body")[0],new MutationObserver(n).observe(t,{childList:!0,attributes:!1,subtree:!0}))};var t=e.createElement("script"),o=e.getElementsByTagName("script")[0];t.src="//www.youtube.com/iframe_api",t.async=!0,o.parentNode.insertBefore(t,o)})
+    (document,window,{
+        trackThresholds:1,
+        thresholdsToTrack:[25,75,50,95]
+    });
+</script>
+<script type="text/javascript">
+    (function(e){function u(e){var t=e.getAttribute(r);return t=null===t?(e.hasAttribute("src")?e:e.querySelector("source")).getAttribute("src").split("/").slice(-1).pop():t}function m(e){(i<0||3<i)&&(i=0),e.eventTimestampFixed=e.eventTimestamp.toFixed(i),e.eventCategoryLabel=n;var t,a=["trackEvent",e.eventCategoryLabel,e.eventType,e.videoTitle,e.eventTimestampFixed];(o||v)&&(t={},o&&(t["dimension"+s]=e.eventTimestamp),v&&(t["dimension"+c]=encodeURIComponent((100*e.currentVolume).toFixed(0)+"%")),a.push(t)),window._paq.push(a)}var t,n=e.eventCategoryLabel,a=e.videoElementSelector,r=e.videoTitleAttribute,i=e.trackingAccuracy,l=e.trackThresholds,d=e.thresholdsToTrack,o=e.trackTimestampAsDimension,s=e.dimensionIdForTimestamps,v=e.trackVolumeAsDimension,c=e.dimensionIdForVolume,T=d.split(",").map(function(e){return+e}),p={},h=100,g=function(e){var t=u(e.target),a=e.target,n=a.currentTime,r=a.volume,i=a.seeking,d=a.hasPaused,o=a.hasPlayed,a=a.hasEnded,r={videoTitle:t,eventTimestamp:n,currentVolume:r};d||o?!i&&o&&d?(r.eventType="Resume",m(r),e.target.hasReplayed=!0,e.target.hasEnded=!1):a&&(r.eventType="Replay after watching",m(r),e.target.hasEnded=!1):(r.eventType="Play",m(r),e.target.hasPlayed=!0)},y=function(e){var t=e.target,a=t.currentTime,n=t.duration,t=t.hasPlayed,r=u(e.target);if(l&&t){void 0===p[r]&&(p[r]=[]);for(var i=a/n*100,d=0;d<=T.length;d++){var o,s=T[d];s<i&&!p[r].includes(s)&&(o={eventType:"Progress - "+s+"%",videoTitle:r,eventTimestamp:a,currentVolume:e.target.volume},m(o),p[r].push(s))}}},f=function(e){e.target.hasPaused=!0;var t=e.target,a=t.currentTime,n=t.duration,r=t.volume,i=t.seeking,t=u(e.target);a<n&&!i?(m({eventType:"Pause",videoTitle:t,eventTimestamp:a,currentVolume:r}),e.target.hasPaused=!0):e.target.hasPaused=!1},b=function(e){var t=e.target,a=t.currentTime,n=t.duration,r=t.volume,i=t.seeking,d=t.hasPaused,o=t.hasPlayed,s=t.hasReplayed,t=t.hasEnded,r={videoTitle:u(e.target),eventTimestamp:a,currentVolume:r};a<n&&!i&&(d?(r.eventType="Seeked when paused",m(r)):o||d?o&&!d&&!s&&t?(r.eventType="Seeked after finished watching",m(r)):!o||d||s?s&&(e.target.hasReplayed=!1):(r.eventType="Seeked during playback",m(r)):(r.eventType="Seeked before playback",m(r)))},k=function(e){var t=e.target,a=t.currentTime,t=t.volume;e.target.hasPaused=!1,e.target.hasEnded=!0;t={eventType:"Watched",videoTitle:u(e.target),eventTimestamp:a,currentVolume:t};m(t)},E=function(n,r){var i;return function(){for(var e=arguments.length,t=new Array(e),a=0;a<e;a++)t[a]=arguments[a];clearTimeout(i),i=setTimeout(function(){i=null,n.apply(void 0,t)},r)}},A=function(e){var t,a=e.target,n=a.currentTime,r=a.volume,i=a.muted,d=a.hasMuted,a=parseInt((100*r).toFixed(0));i?(t="Muted",e.target.hasMuted=!0,h=0):d?(e.target.hasMuted=!(t="Unmuted"),h=a):i||d||(h=(t=a<h?"Volume down":"Volume up",a));r={eventType:t,videoTitle:u(e.target),eventTimestamp:n,currentVolume:r};m(r)};function P(){document.querySelectorAll(a).forEach(function(e){e.getAttribute("data-listener-attached")||((e=e).hasPlayed=!1,e.hasPaused=!1,e.hasReplayed=!1,e.hasEnded=!1,e.hasMuted=!1,e.addEventListener("play",g),e.addEventListener("timeupdate",y),e.addEventListener("pause",f),e.addEventListener("seeked",b),e.addEventListener("ended",k),e.addEventListener("volumechange",E(function(e){return A(e)},250)),e.setAttribute("data-listener-attached",!0))})}P(),window.addEventListener("beforeunload",function(e){mediaElements=document.querySelectorAll("video"),mediaElements.forEach(function(e){var t=e.ended,a=e.paused,n=e.hasPlayed,r=e.currentTime;t||a||!n||(e=u(e),m({eventType:"Tab unloaded during video play",videoTitle:e,eventTimestamp:r}))})}),window.MutationObserver&&(t=document.getElementsByTagName("body")[0],new MutationObserver(P).observe(t,{childList:!0,attributes:!1,subtree:!0}))})
+    ({
+        videoElementSelector: 'video',
+        eventCategoryLabel: 'Video - HTML5',
+        videoTitleAttribute: '',
+        trackingAccuracy: '0',
+        trackThresholds: true,
+        thresholdsToTrack: '25,50,75,95',
+        trackTimestampAsDimension: false,
+        dimensionIdForTimestamps: '',
+        trackVolumeAsDimension: false,
+        dimensionIdForVolume: ''
+    });
+</script>
+<script type="text/javascript">
+  _ppas.push(['deanonymizeUser']);
+</script><div id="ppms_cm_consent_popup_d4e49c2d-6dc1-479e-96dc-7d062e78d0c1"><div class="ppms_cm_popup_overlay" id="ppms_cm_popup_overlay" data-root="true"><div class="ppms_header_wrapper" data-disable-select="true" id="ppms-aab8d8bf-3645-4665-a8fc-2965f7672cbd"><span class="ppms_cm_close_popup" id="ppms_cm_close-popup" data-disable-select="true"><svg class="ppms_cm_close_popup" id="ppms_cm_close_popup_id" height="16" viewox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><switch data-disable-select="true" id="ppms-051d866b-094a-4dda-9aa0-af67e1e74151"><g data-disable-select="true" id="ppms-88241c3c-969c-478f-ac6b-d530a0f93905"><path d="M2.188 4.406l2.244-2.25 9.725 9.75-2.244 2.25-9.726-9.75" data-disable-select="true" id="ppms-94719546-e465-4192-a617-a33434ca8686"></path><path d="M11.913 2.156l2.244 2.25-9.725 9.75-2.245-2.25 9.726-9.75" data-disable-select="true" id="ppms-bcc3e3e5-6f98-48db-ac32-eb4098d76fdb"></path></g></switch></svg></span><div class="ppms_cm_language_select_wrapper" id="ppms_cm_language_select_wrapper_id" data-disable-select="true"><div class="ppms_cm_language_select_btn" id="ppms_cm_language_select_btn_id" data-type="customSelect" data-fixed-text="true" tabindex="0">Svenska<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="ppms_cm_language_select_chevron" id="ppms_cm_language_select_chevron_id" data-disable-select="true"><path data-disable-select="true" fill="#131313" d="M8.2,8.7l2.8-2.8l1.4,1.4l-2.8,2.8l-1.4,1.4L4,7.2l1.4-1.4L8.2,8.7z" id="ppms-0362fc16-2454-4212-abb2-1abf7bae391f"></path></svg></div><div class="ppms_cm_language_select_extendable" id="ppms_cm_language_select_extendable_id" data-disable-select="true"><div id="ppms_cm_language_select_extendable_item_0" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="en" tabindex="0" data-fixed-text="true">Engelska</div><div id="ppms_cm_language_select_extendable_item_1" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="fi" tabindex="0" data-fixed-text="true">Finska</div><div id="ppms_cm_language_select_extendable_item_2" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="fr" tabindex="0" data-fixed-text="true">Franska</div><div id="ppms_cm_language_select_extendable_item_3" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="nl" tabindex="0" data-fixed-text="true">Nederländska</div><div id="ppms_cm_language_select_extendable_item_4" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="pl" tabindex="0" data-fixed-text="true">Polska</div><div id="ppms_cm_language_select_extendable_item_5" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="pt" tabindex="0" data-fixed-text="true">Portugisiska</div><div id="ppms_cm_language_select_extendable_item_6" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="es" tabindex="0" data-fixed-text="true">Spanska</div><div id="ppms_cm_language_select_extendable_item_7" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="sv" tabindex="0" data-fixed-text="true">Svenska</div><div id="ppms_cm_language_select_extendable_item_8" class="ppms_cm_language_select_extendable_item" data-type="customOption" data-value="de" tabindex="0" data-fixed-text="true">Tyska</div></div><select aria-hidden="true"><option value="en">Engelska</option><option value="fi">Finska</option><option value="fr">Franska</option><option value="nl">Nederländska</option><option value="pl">Polska</option><option value="pt">Portugisiska</option><option value="es">Spanska</option><option value="sv" selected="true">Svenska</option><option value="de">Tyska</option></select></div></div><div class="ppms_cm_popup_wrapper top" id="ppms_cm_popup_wrapper" data-disable-select="true"><div class="ppms_cm_popup" id="ppms_cm_popup" data-disable-select="true"><div class="ppms_cm_popup_main" id="ppms_cm_popup_main_id" data-disable-select="true"><div class="ppms_cm_popup_responsive_wrapper" id="ppms_cm_popup_responsive_wrapper_id" data-disable-select="true"><span class="ppms_cm_header1" id="ppms-56ba93d0-41e0-4600-b473-aa10705d6baf">Vi använder cookies</span><div class="ppms_cm_main_content" id="ppms-a8320fe0-72c4-466d-a217-45cc3e4c338b"><div class="ppms_cm_description_wrapper" id="ppms-93d67ffc-5f9c-4b16-b402-edf238b5af38"><p class="ppms_cm_paragraph" id="c733c44f-37b5-4202-b2ed-5273ab8d2a96">Denna webbplats använder kakor (cookies) som lagras i din webbläsare. Vissa kakor är nödvändiga för att sidan ska fungera korrekt och andra är valbara. Du väljer vilka du vill tillåta.</p><div class="ppms_cm_consents_list" id="ppms_cm_consents_list"><div class="ppms_cm_consent_item" data-consent-type="analytics" id="ppms_cm_consent_item-analytics"><span class="ppms_cm_consent_item-dot" id="ppms-85c66520-1074-4cdf-945c-7cf3d0cde146"></span><span class="ppms_cm_consent_item-text" id="ppms-14b6dc61-2bca-4acf-817c-5c690278b080"></span></div><div class="ppms_cm_consent_item" data-consent-type="user_feedback" id="ppms_cm_consent_item-user_feedback"><span class="ppms_cm_consent_item-dot" id="ppms-0bb870c8-d9d1-4320-b683-21ddae57d7f4"></span><span class="ppms_cm_consent_item-text" id="ppms-da70e1ed-0954-413b-8320-2fd14ecd877b"></span></div></div></div><div class="ppms_agree_button_wrapper" data-disable-select="true" id="ppms-08f4cece-664a-494e-9253-f10b35e13955"><button class="ppms_cm_agree-to-all" id="ppms_cm_agree-to-all">Tillåt bara nödvändiga kakor</button><button class="ppms_cm_reject-all" id="ppms_cm_reject-all">Tillåt alla kakor</button></div></div><div class="ppms_cm_data_uses" id="ppms-092240b3-8b41-4d86-8779-22bd9a484a2c"><button class="ppms_cm_content_expander_show_btn" id="ppms_cm_content_expander_show_btn" data-content-expander="true">Hantera valbara kakor</button><button class="ppms_cm_content_expander_hide_btn" id="ppms_cm_content_expander_hide_btn" data-disable-select="true" data-content-expander="true">Hide consent details</button><a class="ppms_cm_link" id="popup-link" href="https://www.miun.se/cookies">Läs mer om cookies och personuppgifter</a><div class="ppms_cm_consent_wrapper" data-disable-select="true" id="ppms_cm_consent_wrapper"><div class="ppms_cm_card_section" data-consent-type="analytics" id="bc932673-e94a-427a-ba48-07161339a013"><div class="ppms_cm_switcher_wrapper" data-disable-select="true" id="ppms-dae1a680-5c6e-4697-8e20-a3f0ebbf6986"><div class="ppms_cm_consent_switcher" data-type="customSwitcher" id="consent-switcher--analytics"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="ppms_cm_consent_switcher_toggle-checkmark--analytics" class="ppms_cm_consent_switcher_toggle-checkmark" data-disable-select="true"><path fill="#ffffff" d="M6.6,9.5l5.7-5.7l1.4,1.4l-5.7,5.7l-1.4,1.4L2.4,8.1l1.4-1.4L6.6,9.5z" id="ppms-eefa78bc-69f5-469e-8ed1-ee674621dca8"></path></svg><div class="ppms_cm_consent_switcher_toggle" id="ppms_cm_consent_switcher_toggle--analytics"></div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="ppms_cm_consent_switcher_toggle-cross--analytics" class="ppms_cm_consent_switcher_toggle-cross" data-disable-select="true"><path fill="#ffffff" fillrule="evenodd" d="M8,6.125 L11.125,3 L13,4.875 L9.875,8 L13,11.125 L11.125,13 L8,9.875 L4.875,13 L3,11.125 L6.125,8 L3,4.875 L4.875,3 L8,6.125 Z" id="ppms-6d023489-525c-444b-9b43-720831269bac"></path></svg></div></div><div class="ppms_cm_content_wrapper" data-disable-select="true" id="ppms-e09fe117-ec4c-412b-b4c0-6e2cc34111e3"><span class="ppms_cm_header4" id="ppms-ec4136cd-bd37-4ff8-830d-456b14674483">Analytics</span><span class="ppms_cm_span" id="f5da2895-583f-433c-b312-d1a383f0351e">We'll collect information about your visit to our site. It helps us understand how the site is used – what's working, what might be broken and what we should improve.</span></div></div><div class="ppms_cm_card_section" data-consent-type="user_feedback" id="ppms-c13ee61c-64dd-44c0-85c1-a3958ed7d38a"><div class="ppms_cm_switcher_wrapper" data-disable-select="true" id="ppms-82e44916-0143-4119-89da-4a15ff3786ca"><div class="ppms_cm_consent_switcher" data-type="customSwitcher" id="consent-switcher--feedback"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="ppms_cm_consent_switcher_toggle-checkmark--feedback" class="ppms_cm_consent_switcher_toggle-checkmark" data-disable-select="true"><path fill="#ffffff" d="M6.6,9.5l5.7-5.7l1.4,1.4l-5.7,5.7l-1.4,1.4L2.4,8.1l1.4-1.4L6.6,9.5z" id="ppms-0ba2e731-7d12-42e3-a76b-cccfc265f4c5"></path></svg><div class="ppms_cm_consent_switcher_toggle" id="ppms_cm_consent_switcher_toggle--feedback"></div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="ppms_cm_consent_switcher_toggle-cross--feedback" class="ppms_cm_consent_switcher_toggle-cross" data-disable-select="true"><path fill="#ffffff" fillrule="evenodd" d="M8,6.125 L11.125,3 L13,4.875 L9.875,8 L13,11.125 L11.125,13 L8,9.875 L4.875,13 L3,11.125 L6.125,8 L3,4.875 L4.875,3 L8,6.125 Z" id="ppms-08315f2b-1688-45e6-8fd6-f7e503cd1ebb"></path></svg></div></div><div class="ppms_cm_content_wrapper" data-disable-select="true" id="ppms-e0a8670a-37d3-4989-a27a-372cb8290927"><span class="ppms_cm_header4" id="ppms-0317c8cb-77e5-401f-a504-e07dee3bbf6b">User feedback</span><span class="ppms_cm_span" id="ppms-004a7d6b-2dd8-4e11-abb2-756fd87317a9">We'll use your data to learn how our user interface is working. It'll help us to improve our site for all users.</span></div></div><div class="ppms_cm_centered_buttons" data-disable-select="true" id="ppms-341cfb0f-8573-4227-b559-804e6c55eb66"><button class="ppms_cm_save-choices" id="ppms_cm_save-choices">Save and close</button></div></div></div></div></div></div></div><div class="ppms_cm_footer" id="ppms_cm_footer"><a target="_blank" id="ppms_cm_footer__logo_link" class="ppms_cm_footer__logo_link" data-disable-select="true" rel="nofollow" href="https://piwik.pro/?utm_source=App&amp;utm_medium=Consent_Pop_Up&amp;utm_campaign=Consent_Manager_Pop_Up"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 272.42 44.95" class="ppms_cm_footer__logo" data-disable-select="true" id="ppms_cm_footer__logo" aria-labelledby="ppms_cm_footer__logo_title" role="img"><title id="ppms_cm_footer__logo_title">Piwik PRO</title><g id="ppms-89b63f86-bbac-4b5b-af22-49b1496af2c7"><path d="M37.29,16A15.92,15.92,0,0,0,22,.09v0H5.32A5.28,5.28,0,0,0,0,5.38V39.56a5.28,5.28,0,0,0,5.32,5.32,5.28,5.28,0,0,0,5.32-5.32V31.93H22v0A15.92,15.92,0,0,0,37.29,16Zm-17,6.47H10.64V9.67h9.46a6.4,6.4,0,0,1,.19,12.79Z" id="ppms-25ccb7e9-6124-4425-b0bc-27fcbc1bc661"></path><path d="M43.33,39.63a5.32,5.32,0,1,0,10.64,0V5.34a5.32,5.32,0,1,0-10.64,0Z" id="ppms-35f6d9d8-7a98-431e-8ead-d4481ed6fbec"></path><path d="M107,.19a4.84,4.84,0,0,0-6,3.33L95.47,22.87,89.94,3.52A4.83,4.83,0,0,0,85.47,0h-.61a4.83,4.83,0,0,0-4.48,3.49L74.87,22.79,69.36,3.52A4.84,4.84,0,1,0,60.05,6.2L70.13,41.44a4.83,4.83,0,0,0,4.38,3.49h.72a4.83,4.83,0,0,0,4.38-3.49L85.16,22l5.55,19.42a4.83,4.83,0,0,0,4.43,3.49h.66a4.83,4.83,0,0,0,4.43-3.49L110.31,6.2A4.86,4.86,0,0,0,107,.19Z" id="ppms-271e364b-32c1-402b-9700-c0746fa9d5f1"></path><path d="M116.5,39.62a5.32,5.32,0,1,0,10.64,0V5.32a5.32,5.32,0,1,0-10.64,0Z" id="ppms-99282f12-19eb-4ed6-801a-b8f26655f349"></path><path d="M155.41,22.33,169.19,8.55a5,5,0,0,0,0-7.07,5,5,0,0,0-7.07,0L145.67,17.93V5.32a5.32,5.32,0,1,0-10.64,0V39.62a5.32,5.32,0,1,0,10.64,0V32.07l2.67-2.67L162,43.26a5,5,0,0,0,7.13-7Z" id="ppms-8520e075-1999-4c8b-bd3b-566fa8cb737a"></path><path d="M249.8,6.05a16.54,16.54,0,0,1,16.62,16.42A16.54,16.54,0,0,1,249.8,38.89H201.28a16.54,16.54,0,0,1-16.62-16.42A16.54,16.54,0,0,1,201.28,6.05H249.8m0-6H201.28a22.42,22.42,0,1,0,0,44.84H249.8a22.42,22.42,0,1,0,0-44.84Z" id="ppms-a053f271-6b01-40db-805d-2a31f42612dd"></path><path d="M206.56,12.8h-5.78a2.11,2.11,0,0,0-2.13,2.13V30.17a2.13,2.13,0,0,0,4.26,0V26.33h3.23c4.34,0,7.82-2.32,7.82-6.79v-.06C214,15.54,211.18,12.8,206.56,12.8Zm3.1,6.82c0,1.66-1.24,2.93-3.37,2.93h-3.37V16.64h3.29c2.13,0,3.45,1,3.45,2.93Zm15.12-6.82h-6.72a2.11,2.11,0,0,0-2.13,2.13V30.17a2.13,2.13,0,0,0,4.26,0V25.95h3.4l4.15,5.25a2.55,2.55,0,0,0,2.1,1.1,2,2,0,0,0,2-2,2.48,2.48,0,0,0-.69-1.63l-3-3.59a5.9,5.9,0,0,0,3.87-5.88v-.06a6.06,6.06,0,0,0-1.66-4.42A7.71,7.71,0,0,0,224.77,12.8Zm3,6.65c0,1.63-1.19,2.73-3.26,2.73h-4.31V16.64h4.23c2.07,0,3.34.94,3.34,2.76Zm16.42-7a10,10,0,0,0-10.31,10v.06a10.29,10.29,0,0,0,20.56-.06v-.06A9.91,9.91,0,0,0,244.17,12.47ZM250,22.52a5.78,5.78,0,0,1-5.8,6,5.87,5.87,0,0,1-5.86-6.07v-.06a5.78,5.78,0,0,1,5.8-6A5.87,5.87,0,0,1,250,22.47Z" id="ppms-c6032a53-5bdc-4bf0-bc30-93ee25f63fa0"></path></g></svg></a><span class="ppms_cm_footer__powered_by" data-disable-select="true" id="ppms_cm_footer__powered_by">Powered by</span><div class="ppms_cm_clearfix" data-disable-select="true" id="ppms-4964b019-c900-41b2-a637-0f9f162c80a8"></div></div></div></div><style id="ppms_cm_consent_popup_d4e49c2d-6dc1-479e-96dc-7d062e78d0c1_styles">div.ppms_cm_popup_overlay,div.ppms_cm_footer,div.ppms_cm_clearfix,span.ppms_cm_footer__powered_by,a.ppms_cm_footer__logo_link,svg.ppms_cm_footer__logo,div.ppms_cm_popup_wrapper top,div.ppms_cm_popup,div.ppms_cm_popup_main,div.ppms_cm_popup_responsive_wrapper,div.ppms_cm_data_uses,div.ppms_cm_consent_wrapper,div.ppms_cm_centered_buttons,button.ppms_cm_save-choices,div.ppms_cm_card_section,div.ppms_cm_content_wrapper,span.ppms_cm_span,span.ppms_cm_header4,div.ppms_cm_switcher_wrapper,div.ppms_cm_consent_switcher,svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_consent_switcher_toggle,svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_card_section,div.ppms_cm_content_wrapper,span.ppms_cm_span,span.ppms_cm_header4,div.ppms_cm_switcher_wrapper,div.ppms_cm_consent_switcher,svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_consent_switcher_toggle,svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_card_section,div.ppms_cm_content_wrapper,span.ppms_cm_span,span.ppms_cm_header4,div.ppms_cm_switcher_wrapper,div.ppms_cm_consent_switcher,svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_consent_switcher_toggle,svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_card_section,div.ppms_cm_content_wrapper,span.ppms_cm_span,span.ppms_cm_header4,div.ppms_cm_switcher_wrapper,div.ppms_cm_consent_switcher,svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_consent_switcher_toggle,svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_card_section,div.ppms_cm_content_wrapper,span.ppms_cm_span,span.ppms_cm_header4,div.ppms_cm_switcher_wrapper,div.ppms_cm_consent_switcher,svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_consent_switcher_toggle,svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_card_section,div.ppms_cm_content_wrapper,span.ppms_cm_span,span.ppms_cm_header4,div.ppms_cm_switcher_wrapper,div.ppms_cm_consent_switcher,svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_consent_switcher_toggle,svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_card_section,div.ppms_cm_content_wrapper,span.ppms_cm_span,span.ppms_cm_header4,div.ppms_cm_switcher_wrapper,div.ppms_cm_consent_switcher,svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_consent_switcher_toggle,svg.ppms_cm_consent_switcher_toggle-checkmark,a.ppms_cm_link,button.ppms_cm_content_expander_hide_btn,button.ppms_cm_content_expander_show_btn,div.ppms_cm_main_content,div.ppms_agree_button_wrapper,button.ppms_cm_reject-all,button.ppms_cm_agree-to-all,div.ppms_cm_description_wrapper,div.ppms_cm_consents_list,div.ppms_cm_consent_item,span.ppms_cm_consent_item-text,span.ppms_cm_consent_item-dot,div.ppms_cm_consent_item,span.ppms_cm_consent_item-text,span.ppms_cm_consent_item-dot,div.ppms_cm_consent_item,span.ppms_cm_consent_item-text,span.ppms_cm_consent_item-dot,div.ppms_cm_consent_item,span.ppms_cm_consent_item-text,span.ppms_cm_consent_item-dot,div.ppms_cm_consent_item,span.ppms_cm_consent_item-text,span.ppms_cm_consent_item-dot,div.ppms_cm_consent_item,span.ppms_cm_consent_item-text,span.ppms_cm_consent_item-dot,div.ppms_cm_consent_item,span.ppms_cm_consent_item-text,span.ppms_cm_consent_item-dot,p.ppms_cm_paragraph,span.ppms_cm_header1,div.ppms_header_wrapper,div.ppms_cm_language_select_wrapper,div.ppms_cm_language_select_extendable,div.ppms_cm_language_select_extendable_item,div.ppms_cm_language_select_extendable_item,div.ppms_cm_language_select_extendable_item,div.ppms_cm_language_select_btn,svg.ppms_cm_language_select_chevron,span.ppms_cm_close_popup,svg.ppms_cm_close_popup {align-content: initial !important; align-items: initial !important; align-self: initial !important; animation: initial !important; appearance: initial !important; backface-visibility: initial !important; background-blend-mode: initial !important; background: none !important; binding: initial !important; block-size: initial !important; border-block-end: initial !important; border-block-start: initial !important; border-collapse: initial !important; border-inline-end: initial !important; border-inline-start: initial !important; border-radius: initial !important; border-spacing: initial !important; border: 0px !important; bottom: initial !important; box-align: initial !important; box-decoration-break: initial !important; box-direction: initial !important; box-flex: initial !important; box-ordinal-group: initial !important; box-orient: initial !important; box-pack: initial !important; box-shadow: initial !important; box-sizing: initial !important; caption-side: initial !important; clear: initial !important; color-adjust: initial !important; color-interpolation-filters: initial !important; color-interpolation: initial !important; color: initial !important; column-fill: initial !important; column-gap: initial !important; column-rule: initial !important; columns: initial !important; content: initial !important; control-character-visibility: initial !important; counter-increment: initial !important; counter-reset: initial !important; cursor: default !important; display: block !important; dominant-baseline: initial !important; empty-cells: initial !important; fill-opacity: initial !important; fill-rule: initial !important; fill: initial !important; filter: initial !important; flex-flow: initial !important; flex: initial !important; float-edge: initial !important; float: initial !important; flood-color: initial !important; flood-opacity: initial !important; font-family: initial !important; font-feature-settings: initial !important; font-kerning: initial !important; font-language-override: initial !important; font-size-adjust: initial !important; font-size: initial !important; font-stretch: initial !important; font-style: initial !important; font-synthesis: initial !important; font-variant: initial !important; font-weight: initial !important; force-broken-image-icon: initial !important; height: initial !important; hyphens: initial !important; image-orientation: initial !important; image-region: initial !important; image-rendering: initial !important; ime-mode: initial !important; inline-size: initial !important; isolation: initial !important; justify-content: initial !important; justify-items: initial !important; justify-self: initial !important; left: initial !important; letter-spacing: initial !important; lighting-color: initial !important; line-height: 1 !important; list-style: outside !important; margin-block-end: initial !important; margin-block-start: initial !important; margin-inline-end: initial !important; margin-inline-start: initial !important; margin: 0px !important; marker-offset: initial !important; marker: initial !important; mask-type: initial !important; mask: initial !important; max-block-size: initial !important; max-height: initial !important; max-inline-size: initial !important; max-width: initial !important; min-block-size: initial !important; min-height: initial !important; min-inline-size: initial !important; min-width: initial !important; mix-blend-mode: initial !important; object-fit: initial !important; object-position: initial !important; offset-block-end: initial !important; offset-block-start: initial !important; offset-inline-end: initial !important; offset-inline-start: initial !important; opacity: initial !important; order: initial !important; orient: initial !important; outline-offset: initial !important; outline-radius: initial !important; outline: initial !important; overflow: initial !important; padding-block-end: initial !important; padding-block-start: initial !important; padding-inline-end: initial !important; padding-inline-start: initial !important; padding: 0px !important; page-break-after: initial !important; page-break-before: initial !important; page-break-inside: initial !important; paint-order: initial !important; perspective-origin: initial !important; perspective: initial !important; pointer-events: initial !important; position: initial !important; quotes: initial !important; resize: initial !important; right: initial !important; ruby-align: initial !important; ruby-position: initial !important; scroll-behavior: initial !important; scroll-snap-coordinate: initial !important; scroll-snap-destination: initial !important; scroll-snap-points-x: initial !important; scroll-snap-points-y: initial !important; scroll-snap-type: initial !important; shape-rendering: initial !important; stack-sizing: initial !important; stop-color: initial !important; stop-opacity: initial !important; stroke-dasharray: initial !important; stroke-dashoffset: initial !important; stroke-linecap: initial !important; stroke-linejoin: initial !important; stroke-miterlimit: initial !important; stroke-opacity: initial !important; stroke-width: initial !important; stroke: initial !important; tab-size: initial !important; table-layout: initial !important; text-align-last: initial !important; text-align: initial !important; text-anchor: initial !important; text-combine-upright: initial !important; text-decoration: initial !important; text-emphasis-position: initial !important; text-emphasis: initial !important; text-indent: initial !important; text-orientation: initial !important; text-overflow: initial !important; text-rendering: initial !important; text-shadow: initial !important; text-size-adjust: initial !important; text-transform: none !important; top: initial !important; transform-origin: initial !important; transform-style: initial !important; transform: initial !important; transition: initial !important; user-focus: initial !important; user-input: initial !important; user-modify: initial !important; user-select: initial !important; vector-effect: initial !important; vertical-align: initial !important; visibility: initial !important; white-space: initial !important; width: initial !important; will-change: initial !important; window-dragging: initial !important; word-break: initial !important; word-spacing: initial !important; word-wrap: initial !important; writing-mode: initial !important; } div.ppms_cm_popup_overlay,div.ppms_cm_popup_overlay:focus,div.ppms_cm_popup_overlay:hover {background-color: #FFF !important; z-index: 10000 !important; left: 0 !important; bottom: 0 !important; position: fixed !important; display: flex !important; flex-direction: column !important; width: 100% !important; max-height: 80% !important; box-shadow: 0px -2px 5px 1px rgba(0,0,0,0.14) !important; } div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper,div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper:focus,div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper:hover {background-color: transparent !important; width: 100% !important; margin-top: 50px !important; display: flex !important; flex-direction: column !important; overflow: auto !important; } div.ppms_cm_popup_overlay div.ppms_cm_popup,div.ppms_cm_popup_overlay div.ppms_cm_popup:focus,div.ppms_cm_popup_overlay div.ppms_cm_popup:hover {padding-top: 4px !important; padding-right: 24px !important; padding-bottom: 24px !important; padding-left: 24px !important; position: relative !important; height: auto !important; background-color: transparent !important; max-height: 100% !important; display: flex !important; flex-direction: column !important; } div.ppms_cm_popup_overlay div.ppms_header_wrapper,div.ppms_cm_popup_overlay div.ppms_header_wrapper:focus,div.ppms_cm_popup_overlay div.ppms_header_wrapper:hover {position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 30px !important; z-index: 4 !important; padding-top: 20px !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_header_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_header_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_header_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_header_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_header_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_header_wrapper:hover {padding-top: 12px !important; } div.ppms_cm_popup_overlay div.ppms_cm_toggle_details,div.ppms_cm_popup_overlay div.ppms_cm_toggle_details:focus,div.ppms_cm_popup_overlay div.ppms_cm_toggle_details:hover {margin-bottom: 30px !important; } div.ppms_cm_popup_overlay div.ppms_cm_main_content,div.ppms_cm_popup_overlay div.ppms_cm_main_content:focus,div.ppms_cm_popup_overlay div.ppms_cm_main_content:hover {display: flex !important; justify-content: space-between !important; align-items: center !important; flex-shrink: 0 !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_main_content,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_main_content:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_main_content:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_main_content,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_main_content:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_main_content:hover {display: block !important; } div.ppms_cm_popup_overlay span.ppms_cm_header1,div.ppms_cm_popup_overlay span.ppms_cm_header1:focus,div.ppms_cm_popup_overlay span.ppms_cm_header1:hover {font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: #131313 !important; margin-top: 0 !important; margin-right: 0 !important; margin-bottom: 8px !important; margin-left: 0 !important; font-size: 24px !important; font-weight: 700 !important; line-height: 29px !important; } div.ppms_cm_popup_overlay span.ppms_cm_header4,div.ppms_cm_popup_overlay span.ppms_cm_header4:focus,div.ppms_cm_popup_overlay span.ppms_cm_header4:hover {font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: #131313 !important; font-size: 12px !important; margin-top: 0 !important; margin-right: 6px !important; margin-bottom: 0 !important; margin-left: 0 !important; font-weight: 700 !important; line-height: 16px !important; } div.ppms_cm_popup_overlay p.ppms_cm_paragraph,div.ppms_cm_popup_overlay p.ppms_cm_paragraph:focus,div.ppms_cm_popup_overlay p.ppms_cm_paragraph:hover {font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: #131313 !important; font-size: 14px !important; line-height: 18px !important; padding-right: 30px !important; display: block !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_wrapper,div.ppms_cm_popup_overlay div.ppms_cm_consent_wrapper:focus,div.ppms_cm_popup_overlay div.ppms_cm_consent_wrapper:hover {width: 100% !important; margin-top: 16px !important; max-height: 100% !important; overflow-y: auto !important; display: none !important; } div.ppms_cm_popup_overlay button.ppms_cm_content_expander_show_btn.expanded ~ div.ppms_cm_consent_wrapper {display: block !important; } div.ppms_cm_popup_overlay div.ppms_cm_card_section,div.ppms_cm_popup_overlay div.ppms_cm_card_section:focus,div.ppms_cm_popup_overlay div.ppms_cm_card_section:hover {flex: auto !important; border-color: #EEE !important; border-style: solid !important; border-width: 1px !important; background-color: #FAFAFA !important; padding-top: 16px !important; padding-right: 24px !important; padding-bottom: 16px !important; padding-left: 24px !important; display: flex !important; flex-direction: row !important; } div.ppms_cm_popup_overlay div.ppms_cm_content_wrapper,div.ppms_cm_popup_overlay div.ppms_cm_content_wrapper:focus,div.ppms_cm_popup_overlay div.ppms_cm_content_wrapper:hover {margin-left: 24px !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_content_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_content_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_content_wrapper:hover {margin-left: 24px !important; } div.ppms_cm_popup_overlay div.ppms_cm_switcher_wrapper,div.ppms_cm_popup_overlay div.ppms_cm_switcher_wrapper:focus,div.ppms_cm_popup_overlay div.ppms_cm_switcher_wrapper:hover {display: flex !important; align-items: center !important; min-width: 70px !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher:focus,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher:hover {padding-top: 1px !important; padding-bottom: 1px !important; padding-right: 1px !important; padding-left: 1px !important; height: 24px !important; width: 70px !important; border-width: 1px !important; border-style: solid !important; border-radius: 3px !important; border-color: #DDD !important; box-sizing: border-box !important; background-color: #E3301B !important; position: relative !important; box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .2) !important; cursor: pointer !important; } .ie8 div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher,.ie8 div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher:focus,.ie8 div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher:hover {background-color: #E3301B !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked:focus,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked:hover {border-color: #DDD !important; background-color: #1AA023 !important; } .ie8 div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked,.ie8 div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked:focus,.ie8 div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked:hover {border-color: #DDD !important; background-color: #1AA023 !important; } div.ppms_cm_popup_overlay span.ppms_cm_close_popup,div.ppms_cm_popup_overlay span.ppms_cm_close_popup:focus,div.ppms_cm_popup_overlay span.ppms_cm_close_popup:hover {right: 24px !important; position: absolute !important; cursor: pointer !important; } div.ppms_cm_popup_overlay svg.ppms_cm_close_popup,div.ppms_cm_popup_overlay svg.ppms_cm_close_popup:focus,div.ppms_cm_popup_overlay svg.ppms_cm_close_popup:hover {cursor: pointer !important; width: 16px !important; height: 16px !important; } div.ppms_cm_popup_overlay button.ppms_cm_content_expander_show_btn,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_show_btn:focus,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_show_btn:hover {cursor: pointer !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: rgb(6, 116, 231) !important; font-size: 14px !important; line-height: 16px !important; margin-top: 16px !important; text-decoration: none !important; display: block !important; align-self: flex-start; margin-right: 32px !important; } div.ppms_cm_popup_overlay button.ppms_cm_content_expander_show_btn.expanded,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_show_btn.expanded:focus,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_show_btn.expanded:hover {display: none !important; } div.ppms_cm_popup_overlay button.ppms_cm_content_expander_hide_btn,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_hide_btn:focus,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_hide_btn:hover {display: none !important; } div.ppms_cm_popup_overlay button.ppms_cm_content_expander_hide_btn.expanded,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_hide_btn.expanded:focus,div.ppms_cm_popup_overlay button.ppms_cm_content_expander_hide_btn.expanded:hover {cursor: pointer !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: #107EF1 !important; font-size: 14px !important; line-height: 16px !important; margin-top: 16px !important; text-decoration: none !important; display: block !important; align-self: flex-start; margin-right: 32px !important; } div.ppms_cm_popup_overlay div.ppms_cm_popup_main,div.ppms_cm_popup_overlay div.ppms_cm_popup_main:focus,div.ppms_cm_popup_overlay div.ppms_cm_popup_main:hover {display: flex !important; flex-direction: column !important; width: 100% !important; max-height: 100% !important; } div.ppms_cm_popup_overlay div.ppms_cm_popup_responsive_wrapper,div.ppms_cm_popup_overlay div.ppms_cm_popup_responsive_wrapper:focus,div.ppms_cm_popup_overlay div.ppms_cm_popup_responsive_wrapper:hover {display: flex !important; flex-direction: column !important; height: auto !important; max-height: 100% !important; } div.ppms_cm_popup_overlay div.ppms_cm_footer span.ppms_cm_footer__powered_by,div.ppms_cm_popup_overlay div.ppms_cm_footer span.ppms_cm_footer__powered_by:focus,div.ppms_cm_popup_overlay div.ppms_cm_footer span.ppms_cm_footer__powered_by:hover {color: #999 !important; display: inline-block !important; float: right !important; padding-top: 0 !important; padding-right: 8px !important; padding-bottom: 0 !important; padding-left: 8px !important; font-size: 11px !important; line-height: 13px !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; } div.ppms_cm_popup_overlay div.ppms_cm_footer,div.ppms_cm_popup_overlay div.ppms_cm_footer:focus,div.ppms_cm_popup_overlay div.ppms_cm_footer:hover {padding-top: 11px !important; padding-bottom: 11px !important; padding-right: 11px !important; padding-left: 11px !important; background-color: #FAFAFA !important; box-shadow: inset 0 1px 1px 0 #DDD !important; } div.ppms_cm_popup_overlay svg.ppms_cm_footer__logo,div.ppms_cm_popup_overlay svg.ppms_cm_footer__logo:focus,div.ppms_cm_popup_overlay svg.ppms_cm_footer__logo:hover {cursor: pointer !important; height: 13px !important; width: 79px !important; float: right !important; display: inline-block !important; border-style: none !important; } div.ppms_cm_popup_overlay.mobile-lg,div.ppms_cm_popup_overlay.mobile-lg:focus,div.ppms_cm_popup_overlay.mobile-lg:hover,div.ppms_cm_popup_overlay.mobile-sm,div.ppms_cm_popup_overlay.mobile-sm:focus,div.ppms_cm_popup_overlay.mobile-sm:hover {z-index: 10000 !important; bottom: 0 !important; left: 0 !important; position: fixed !important; width: 100% !important; height: auto !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:hover {display: flex !important; flex-direction: column !important; width: 100% !important; min-height: unset !important; max-width: none !important; min-width: unset !important; max-height: 100% !important; margin-top: 44px !important; margin-bottom: 128px !important; overflow: auto !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup:hover {padding-left: 0 !important; padding-right: 0 !important; padding-top: 0px !important; padding-bottom: 0px !important; position: relative !important; height: 100% !important; min-height: unset !important; max-height: 100% !important; } div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_header1,div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_header1:focus,div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_header1:hover,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_header1,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_header1:focus,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_header1:hover {margin-top: 0 !important; margin-right: 0 !important; margin-bottom: 8px !important; margin-left: 0 !important; } div.ppms_cm_popup_overlay.mobile-lg p.ppms_cm_paragraph,div.ppms_cm_popup_overlay.mobile-lg p.ppms_cm_paragraph:focus,div.ppms_cm_popup_overlay.mobile-lg p.ppms_cm_paragraph:hover,div.ppms_cm_popup_overlay.mobile-sm p.ppms_cm_paragraph,div.ppms_cm_popup_overlay.mobile-sm p.ppms_cm_paragraph:focus,div.ppms_cm_popup_overlay.mobile-sm p.ppms_cm_paragraph:hover {padding-top: 0 !important; padding-right: 12px !important; padding-bottom: 0 !important; padding-left: 12px !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consent_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consent_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consent_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consent_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consent_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consent_wrapper:hover {display: block !important; max-width: initial !important; height: 100% !important; margin-top: 16px !important; overflow-y: initial !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consent_wrapper .ppms_cm_card_section,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consent_wrapper .ppms_cm_card_section {display: none !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn.expanded ~ div.ppms_cm_consent_wrapper .ppms_cm_card_section,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn.expanded ~ div.ppms_cm_consent_wrapper .ppms_cm_card_section {display: flex !important; } div.ppms_cm_popup_overlay span.ppms_cm_span,div.ppms_cm_popup_overlay span.ppms_cm_span:focus,div.ppms_cm_popup_overlay span.ppms_cm_span:hover {font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: #131313 !important; font-size: 12px !important; line-height: 16px !important; } div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_card_section,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_card_section:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_card_section:hover {flex-direction: column !important; padding-top: 16px !important; padding-bottom: 16px !important; padding-right: 16px !important; padding-left: 16px !important; } div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_content_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_content_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_content_wrapper:hover {margin-left: 0 !important; order: 1 !important; } div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_switcher_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_switcher_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_switcher_wrapper:hover {order: 2 !important; margin-top: 4px !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_centered_buttons,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_centered_buttons:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_centered_buttons:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_centered_buttons,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_centered_buttons:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_centered_buttons:hover {padding-top: 0 !important; padding-bottom: 0 !important; padding-right: 0 !important; padding-left: 0 !important; height: 0 !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_save-choices,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_save-choices:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_save-choices:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_save-choices,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_save-choices:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_save-choices:hover {position: fixed !important; z-index: 1 !important; bottom: 51px !important; text-align: center !important; width: 100% !important; margin-top: 0 !important; margin-right: 0 !important; margin-bottom: 0 !important; margin-left: 0 !important; padding-top: 0 !important; padding-right: 8px !important; padding-bottom: 0 !important; padding-left: 8px !important; box-sizing: border-box !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_agree-to-all,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_agree-to-all:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_agree-to-all:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_agree-to-all,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_agree-to-all:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_agree-to-all:hover {padding-top: 0 !important; padding-right: 8px !important; padding-bottom: 0 !important; padding-left: 8px !important; box-sizing: border-box !important; height: 32px !important; margin-top: 0 !important; margin-right: 8px !important; margin-bottom: 0 !important; margin-left: 8px !important; min-width: auto !important; word-break: break-word !important; } div.ppms_cm_popup_overlay div.ppms_agree_button_wrapper,div.ppms_cm_popup_overlay div.ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay div.ppms_agree_button_wrapper:hover {height: 73px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_agree_button_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_agree_button_wrapper:hover {position: fixed !important; bottom: 75px !important; z-index: 1; width: 100% !important; left: 0 !important; height: 88px !important; box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .2) !important; justify-content: space-evenly !important; } div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper div.ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper div.ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper div.ppms_agree_button_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper div.ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper div.ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper div.ppms_agree_button_wrapper:hover {bottom: 0px !important; } div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper.expanded div.ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper.expanded div.ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper.expanded div.ppms_agree_button_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper.expanded div.ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper.expanded div.ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper.expanded div.ppms_agree_button_wrapper:hover {bottom: 40px !important; } div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper button.ppms_cm_save-choices,div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper button.ppms_cm_save-choices:focus,div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper button.ppms_cm_save-choices:hover,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper button.ppms_cm_save-choices,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper button.ppms_cm_save-choices:focus,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper button.ppms_cm_save-choices:hover {bottom: 16px !important; } div.ppms_cm_popup_overlay button.ppms_cm_reject-all,div.ppms_cm_popup_overlay button.ppms_cm_reject-all:focus,div.ppms_cm_popup_overlay button.ppms_cm_reject-all:hover {margin-left: 0 !important; margin-right: 40px !important; border-color: #0B4BB3 !important; background-color: rgb(0, 3, 7) !important; color: #fff !important; min-width: 162px !important; padding-top: 7px !important; padding-right: 8px !important; padding-bottom: 7px !important; padding-left: 8px !important; font-weight: 400 !important; font-size: 14px !important; line-height: 17px !important; text-align: center !important; border-width: 1px !important; border-style: solid !important; border-radius: 2px !important; outline: 0 !important; cursor: pointer !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; } div.ppms_cm_popup_overlay button.ppms_cm_save-choices,div.ppms_cm_popup_overlay button.ppms_cm_save-choices:focus,div.ppms_cm_popup_overlay button.ppms_cm_save-choices:hover {cursor: pointer !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: #107EF1 !important; font-size: 14px !important; line-height: 16px !important; text-decoration: none !important; margin-top: 32px !important; margin-bottom: 8px !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_reject-all,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_reject-all:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_reject-all:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_reject-all,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_reject-all:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_reject-all:hover {padding-top: 0 !important; padding-right: 8px !important; padding-bottom: 0 !important; padding-left: 8px !important; box-sizing: border-box !important; height: 32px !important; margin-top: 0 !important; margin-right: 8px !important; margin-bottom: 0 !important; margin-left: 8px !important; min-width: auto !important; word-break: break-word !important; } div.ppms_cm_popup_overlay button.ppms_cm_agree-to-all,div.ppms_cm_popup_overlay button.ppms_cm_agree-to-all:focus,div.ppms_cm_popup_overlay button.ppms_cm_agree-to-all:hover {margin-left: 0 !important; margin-right: 40px !important; margin-bottom: 8px !important; border-color: rgb(115, 115, 115) !important; background-color: rgb(0, 5, 9) !important; color: #fff !important; min-width: 162px !important; padding-top: 7px !important; padding-right: 8px !important; padding-bottom: 7px !important; padding-left: 8px !important; font-weight: 400 !important; font-size: 14px !important; line-height: 17px !important; text-align: center !important; border-width: 1px !important; border-style: solid !important; border-radius: 2px !important; outline: 0 !important; cursor: pointer !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; } div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_close_popup,div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_close_popup:focus,div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_close_popup:hover,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_close_popup,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_close_popup:focus,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_close_popup:hover {top: 0 !important; right: 0 !important; position: absolute !important; cursor: pointer !important; z-index: 100000 !important; padding-top: 12px !important; padding-bottom: 12px !important; padding-right: 12px !important; padding-left: 12px !important; } div.ppms_cm_popup_overlay.mobile-lg svg.ppms_cm_close_popup,div.ppms_cm_popup_overlay.mobile-lg svg.ppms_cm_close_popup:focus,div.ppms_cm_popup_overlay.mobile-lg svg.ppms_cm_close_popup:hover {cursor: pointer !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn:hover,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn:hover {cursor: pointer !important; text-decoration: none !important; padding-top: 0 !important; padding-right: 12px !important; padding-bottom: 0 !important; padding-left: 12px !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn:hover {display: table !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn.expanded,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn.expanded,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn.expanded:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn.expanded:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn.expanded:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn.expanded:hover {display: none !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn:hover {display: none !important; } div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn.expanded,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn.expanded,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn.expanded:focus,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn.expanded:focus,div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_hide_btn.expanded:hover,div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_hide_btn.expanded:hover {display: table !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_main,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_main:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_main:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_main,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_main:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_main:hover {display: flex !important; flex-direction: column !important; position: relative !important; max-height: 100% !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher_toggle,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher_toggle:focus,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher_toggle:hover {float: left !important; height: 20px !important; width: 32px !important; border-radius: 2px !important; background-color: #FFF !important; content: "" !important; cursor: pointer !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > div.ppms_cm_consent_switcher_toggle,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > div.ppms_cm_consent_switcher_toggle:focus,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > div.ppms_cm_consent_switcher_toggle:hover {float: right !important; } div.ppms_cm_popup_overlay svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_popup_overlay svg.ppms_cm_consent_switcher_toggle-cross:focus,div.ppms_cm_popup_overlay svg.ppms_cm_consent_switcher_toggle-cross:hover {box-sizing: content-box !important; margin-top: auto !important; margin-right: auto !important; margin-bottom: auto !important; margin-left: auto !important; padding-top: 2px !important; padding-right: 0 !important; padding-bottom: 2px !important; padding-left: 0 !important; cursor: pointer !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > svg.ppms_cm_consent_switcher_toggle-cross,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > svg.ppms_cm_consent_switcher_toggle-cross:hover,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > svg.ppms_cm_consent_switcher_toggle-cross:focus {display: none !important; } div.ppms_cm_popup_overlay svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_popup_overlay svg.ppms_cm_consent_switcher_toggle-checkmark:focus,div.ppms_cm_popup_overlay svg.ppms_cm_consent_switcher_toggle-checkmark:hover {display: none !important; cursor: pointer !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > svg.ppms_cm_consent_switcher_toggle-checkmark,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > svg.ppms_cm_consent_switcher_toggle-checkmark:focus,div.ppms_cm_popup_overlay div.ppms_cm_consent_switcher.checked > svg.ppms_cm_consent_switcher_toggle-checkmark:hover {box-sizing: content-box !important; display: inline-block !important; padding-top: 2px !important; padding-right: 0 !important; padding-bottom: 2px !important; padding-left: 9px !important; float: left !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_responsive_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_responsive_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_responsive_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_responsive_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_responsive_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_responsive_wrapper:hover {padding-top: 0 !important; padding-bottom: 0 !important; padding-right: 0 !important; padding-left: 0 !important; } div.ppms_cm_popup_overlay div.ppms_cm_centered_buttons > button.disabled,div.ppms_cm_popup_overlay div.ppms_cm_centered_buttons > button.disabled:focus,div.ppms_cm_popup_overlay div.ppms_cm_centered_buttons > button.disabled:hover {cursor: not-allowed !important; opacity: .5 !important; filter: alpha(opacity=50) !important; } .no-flex div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper:focus,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper:hover {margin-left: auto !important; margin-right: auto !important; margin-top: 7% !important; } .no-flex div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper,.no-flex div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:focus,.no-flex div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:hover,.no-flex div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper,.no-flex div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:focus,.no-flex div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:hover {margin-top: 0 !important; } .ie8 div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper,.ie8 div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper:focus,.ie8 div.ppms_cm_popup_overlay div.ppms_cm_popup_wrapper:hover {zoom: 1 !important; -ms-filter: 'progid:DXImageTransform.Microsoft.Shadow(Color=#CCCCCC, Strength=5, Direction=0), progid:DXImageTransform.Microsoft.Shadow(Color=#CCCCCC, Strength=5, Direction=90), progid:DXImageTransform.Microsoft.Shadow(Color=#CCCCCC, Strength=5, Direction=180), progid:DXImageTransform.Microsoft.Shadow(Color=#CCCCCC, Strength=5, Direction=270)' !important; margin-top: 5% !important; } .no-flex div.ppms_cm_popup_overlay div.ppms_cm_content_wrapper,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_content_wrapper:focus,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_content_wrapper:hover {margin-left: 90px !important; } .ie11 div.ppms_cm_popup_overlay div.ppms_cm_consent_wrapper,.ie11 div.ppms_cm_popup_overlay div.ppms_cm_consent_wrapper:focus,.ie11 div.ppms_cm_popup_overlay div.ppms_cm_consent_wrapper:hover {-ms-overflow-style: scrollbar !important; } .no-flex div.ppms_cm_popup_overlay div.ppms_cm_centered_buttons,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_centered_buttons:focus,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_centered_buttons:hover {overflow: auto !important; } .no-flex div.ppms_cm_popup_overlay div.ppms_cm_switcher_wrapper,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_switcher_wrapper:focus,.no-flex div.ppms_cm_popup_overlay div.ppms_cm_switcher_wrapper:hover {float: left !important; } .no-flex div.ppms_cm_popup_overlay span.ppms_cm_header4,.no-flex div.ppms_cm_popup_overlay span.ppms_cm_header4:focus,.no-flex div.ppms_cm_popup_overlay span.ppms_cm_header4:hover {clear: none !important; } .no-flex div.ppms_cm_popup_overlay button.ppms_cm_reject-all,.no-flex div.ppms_cm_popup_overlay button.ppms_cm_reject-all:focus,.no-flex div.ppms_cm_popup_overlay button.ppms_cm_reject-all:hover {float: right !important; } .no-inline-svg div.ppms_cm_popup_overlay span.ppms_cm_close_popup,.no-inline-svg div.ppms_cm_popup_overlay span.ppms_cm_close_popup:focus,.no-inline-svg div.ppms_cm_popup_overlay span.ppms_cm_close_popup:hover {width: 16px !important; height: 16px !important; } .no-flex div.ppms_cm_popup_overlay button.ppms_cm_agree-to-all,.no-flex div.ppms_cm_popup_overlay button.ppms_cm_agree-to-all:focus,.no-flex div.ppms_cm_popup_overlay button.ppms_cm_agree-to-all:hover {float: left !important; } .no-flex div.ppms_cm_popup_overlay svg.ppms_cm_language_select_chevron,.no-flex div.ppms_cm_popup_overlay svg.ppms_cm_language_select_chevron:focus,.no-flex div.ppms_cm_popup_overlay svg.ppms_cm_language_select_chevron:hover {display: inline-block !important; position: relative !important; top: 3px !important; padding-top: 3px !important; cursor: pointer !important; } .no-inline-svg div.ppms_cm_popup_overlay span.ppms_cm_close_popup:before {font-family: sans-serif !important; font-weight: 700 !important; content: 'x' !important; } div.ppms_cm_popup_overlay div.ppms_cm_clearfix:after {content: "" !important; clear: both !important; display: block !important; } .ie11 div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consent_wrapper,.ie11 div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consent_wrapper,.ie11 div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consent_wrapper:focus,.ie11 div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consent_wrapper:focus,.ie11 div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consent_wrapper:hover,.ie11 div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consent_wrapper:hover {display: block !important; } .ie11 div.ppms_cm_popup_overlay p.ppms_cm_paragraph,.ie11 div.ppms_cm_popup_overlay p.ppms_cm_paragraph:focus,.ie11 div.ppms_cm_popup_overlay p.ppms_cm_paragraph:hover {overflow: auto !important; } div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_header1,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_header1,div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_header1:focus,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_header1:focus,div.ppms_cm_popup_overlay.mobile-lg span.ppms_cm_header1:hover,div.ppms_cm_popup_overlay.mobile-sm span.ppms_cm_header1:hover {padding-left: 12px !important; display: table !important; } .ie11 div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn,.ie11 div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn,.ie11 div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn:focus,.ie11 div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn:focus,.ie11 div.ppms_cm_popup_overlay.mobile-lg button.ppms_cm_content_expander_show_btn:hover,.ie11 div.ppms_cm_popup_overlay.mobile-sm button.ppms_cm_content_expander_show_btn:hover {min-height: 32px !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_wrapper {position: absolute !important; left: 24px !important; margin-top: -8px !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_wrapper select {display: none !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_language_select_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_language_select_wrapper:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_language_select_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_language_select_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_language_select_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_language_select_wrapper:hover {top: 12px !important; left: 12px !important; position: absolute !important; cursor: pointer !important; z-index: 100000 !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_language_select_wrapper select,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_language_select_wrapper select {display: block !important; opacity: 0 !important; margin-top: -32px !important; height: 32px !important; position: relative !important; z-index: 100001 !important; width: fit-content !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_extendable {position: absolute !important; display: none !important; box-sizing: border-box !important; } div.ppms_cm_language_select_btn.expanded + div.ppms_cm_language_select_extendable {display: block !important; background-color: white !important; z-index: 997 !important; border-width: 1px !important; border-style: solid !important; border-color: #DDDDDD !important; width: 200px !important; max-height: 160px !important; overflow-y: auto !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper.expanded::after,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper.expanded::after {content: "" !important; display: block !important; position: absolute !important; bottom: 0 !important; left: 0 !important; height: 163px !important; width: 100% !important; box-shadow: 0px -1px 4px 0 rgba(0,0,0,0.1) !important; } div.ppms_cm_popup_overlay.mobile-lg div:last-of-type.ppms_cm_popup_wrapper.expanded::after,div.ppms_cm_popup_overlay.mobile-sm div:last-of-type.ppms_cm_popup_wrapper.expanded::after {height: 128px !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper.expanded.bottom::after,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper.expanded.bottom::after {display: none !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper.expanded::before,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper.expanded::before {content: "" !important; display: block !important; position: absolute !important; top: 0 !important; left: 0 !important; height: 40px !important; width: 100% !important; box-shadow: inset 0 -1px 1px 0 #DDDDDD, 0 1px 4px 0 rgba(0,0,0,0.1) !important; z-index: 1 !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper.expanded.top::before,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper.expanded.top::before {display: none !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_btn,div.ppms_cm_popup_overlay div.ppms_cm_language_select_btn:hover,div.ppms_cm_popup_overlay div.ppms_cm_language_select_btn:focus {width: fit-content !important; height: 30px !important; border-width: 1px !important; border-style: solid !important; border-color: rgba(0,0,0,0) !important; display: flex !important; justify-content: space-between !important; align-items: center !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; font-size: 14px !important; font-weight: 600 !important; cursor: pointer !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_extendable_item,div.ppms_cm_popup_overlay div.ppms_cm_language_select_extendable_item:hover,div.ppms_cm_popup_overlay div.ppms_cm_language_select_extendable_item:focus {max-width: 200px; word-break: break-all; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; font-size: 14px !important; font-weight: 600 !important; padding-top: 0 !important; padding-right: 5px !important; padding-bottom: 0 !important; padding-left: 5px !important; line-height: 30px !important; cursor: pointer !important; border-width: 1px !important; border-style: solid !important; border-color: rgba(0,0,0,0) !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_btn:hover {background-color: #cccccc !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_extendable_item:hover {background-color: #cccccc !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_btn:focus {border-color: #4a90e2 !important; } div.ppms_cm_popup_overlay div.ppms_cm_language_select_extendable_item:focus {border-color: #4a90e2 !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_footer,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_footer:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_footer:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_footer,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_footer:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_footer:hover {padding-top: 11px !important; padding-bottom: 11px !important; padding-right: 11px !important; padding-left: 11px !important; } div.ppms_cm_popup_overlay a.ppms_cm_link,div.ppms_cm_popup_overlay a.ppms_cm_link:focus,div.ppms_cm_popup_overlay a.ppms_cm_link:hover {cursor: pointer !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; color: rgb(6, 116, 231) !important; font-size: 14px !important; line-height: 16px !important; margin-top: 16px !important; margin-bottom: 0px !important; text-decoration: none !important; display: inline-block !important; } div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link,div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link:focus,div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link:hover,div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link,div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link:focus,div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link:hover {margin-top: 16px !important; margin-right: 0 !important; margin-bottom: 0 !important; margin-left: 0 !important; cursor: pointer !important; padding-top: 0 !important; padding-right: 12px !important; padding-bottom: 0 !important; padding-left: 12px !important; text-decoration: none !important; display: inline-block !important; } div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link,div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link,div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link:focus,div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link:focus,div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link:hover,div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link:hover {display: table !important; } .ie11 div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link,.ie11 div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link,.ie11 div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link:focus,.ie11 div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link:focus,.ie11 div.ppms_cm_popup_overlay.mobile-lg a.ppms_cm_link:hover,.ie11 div.ppms_cm_popup_overlay.mobile-sm a.ppms_cm_link:hover {min-height: 32px !important; } div.ppms_cm_popup_overlay div.ppms_cm_consents_list,div.ppms_cm_popup_overlay div.ppms_cm_consents_list:focus,div.ppms_cm_popup_overlay div.ppms_cm_consents_list:hover {display: flex !important; flex-wrap: wrap !important; color: #131313 !important; list-style: outside disc !important; font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; margin-top: 8px !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consents_list,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consents_list:focus,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_consents_list:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consents_list,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consents_list:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_consents_list:hover {padding-top: 0 !important; padding-right: 12px !important; padding-bottom: 0 !important; padding-left: 12px !important; } div.ppms_cm_popup_overlay div.ppms_cm_consent_item,div.ppms_cm_popup_overlay div.ppms_cm_consent_item:focus,div.ppms_cm_popup_overlay div.ppms_cm_consent_item:hover {margin-right: 32px !important; margin-top: 8px !important; display: flex !important; align-items: center !important; } div.ppms_cm_popup_overlay span.ppms_cm_consent_item-dot,div.ppms_cm_popup_overlay span.ppms_cm_consent_item-dot:focus,div.ppms_cm_popup_overlay span.ppms_cm_consent_item-dot:hover {background-color: rgb(254, 251, 251) !important; margin-right: 5px !important; padding-top: 2px !important; padding-bottom: 2px !important; padding-right: 2px !important; padding-left: 2px !important; border-radius: 50% !important; } div.ppms_cm_popup_overlay span.ppms_cm_consent_item-text,div.ppms_cm_popup_overlay span.ppms_cm_consent_item-text:focus,div.ppms_cm_popup_overlay span.ppms_cm_consent_item-text:hover {font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; font-size: 14px !important; color: #131313 !important; line-height: 18px !important; } div.ppms_cm_popup_overlay div.ppms_cm_data_uses,div.ppms_cm_popup_overlay div.ppms_cm_data_uses:focus,div.ppms_cm_popup_overlay div.ppms_cm_data_uses:hover {display: flex !important; flex-wrap: wrap !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded),div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded),div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded):hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded):hover,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded):focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded):focus {margin-bottom: 88px !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded) .ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded) .ppms_agree_button_wrapper,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded) .ppms_agree_button_wrapper:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded) .ppms_agree_button_wrapper:hover,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded) .ppms_agree_button_wrapper:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded) .ppms_agree_button_wrapper:focus {bottom: 35px !important; height: 88px !important; justify-content: space-evenly !important; } div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded) .ppms_cm_save-choices,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded) .ppms_cm_save-choices,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded) .ppms_cm_save-choices:hover,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded) .ppms_cm_save-choices:hover,div.ppms_cm_popup_overlay.mobile-lg div.ppms_cm_popup_wrapper:not(.expanded) .ppms_cm_save-choices:focus,div.ppms_cm_popup_overlay.mobile-sm div.ppms_cm_popup_wrapper:not(.expanded) .ppms_cm_save-choices:focus {display: none !important; } #ppms_cm_content_expander_show_btn {} </style><script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["trackEvent", 'consent_form_impression', 'popup']);
+</script>
 </body></html>
